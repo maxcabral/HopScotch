@@ -10,17 +10,19 @@
 		5076CC4417F7525700845CEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076CC4317F7525700845CEA /* Foundation.framework */; };
 		5076CC4617F7525700845CEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076CC4517F7525700845CEA /* CoreGraphics.framework */; };
 		5076CC4817F7525700845CEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076CC4717F7525700845CEA /* UIKit.framework */; };
-		5076CC4E17F7525700845CEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5076CC4C17F7525700845CEA /* InfoPlist.strings */; };
-		5076CC5017F7525700845CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076CC4F17F7525700845CEA /* main.m */; };
-		5076CC5417F7525700845CEA /* HSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076CC5317F7525700845CEA /* HSAppDelegate.m */; };
-		5076CC5717F7525700845CEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5076CC5517F7525700845CEA /* Main.storyboard */; };
-		5076CC5A17F7525700845CEA /* HSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076CC5917F7525700845CEA /* HSViewController.m */; };
-		5076CC5C17F7525700845CEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5076CC5B17F7525700845CEA /* Images.xcassets */; };
 		5076CC6317F7525700845CEA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076CC6217F7525700845CEA /* XCTest.framework */; };
 		5076CC6417F7525700845CEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076CC4317F7525700845CEA /* Foundation.framework */; };
 		5076CC6517F7525700845CEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076CC4717F7525700845CEA /* UIKit.framework */; };
 		5076CC6D17F7525700845CEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5076CC6B17F7525700845CEA /* InfoPlist.strings */; };
 		5076CC6F17F7525700845CEA /* HopScotchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076CC6E17F7525700845CEA /* HopScotchTests.m */; };
+		50A314A317F7585000074944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A3149417F7585000074944 /* Main.storyboard */; };
+		50A314A417F7585000074944 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50A3149717F7585000074944 /* InfoPlist.strings */; };
+		50A314A517F7585000074944 /* HopScotch-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50A3149917F7585000074944 /* HopScotch-Info.plist */; };
+		50A314A617F7585000074944 /* HSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3149C17F7585000074944 /* HSAppDelegate.m */; };
+		50A314A717F7585000074944 /* HSApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3149E17F7585000074944 /* HSApplication.m */; };
+		50A314A817F7585000074944 /* HSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314A017F7585000074944 /* HSViewController.m */; };
+		50A314A917F7585000074944 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A314A117F7585000074944 /* Images.xcassets */; };
+		50A314AA17F7585000074944 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314A217F7585000074944 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,21 +40,23 @@
 		5076CC4317F7525700845CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5076CC4517F7525700845CEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5076CC4717F7525700845CEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		5076CC4B17F7525700845CEA /* HopScotch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HopScotch-Info.plist"; sourceTree = "<group>"; };
-		5076CC4D17F7525700845CEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5076CC4F17F7525700845CEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5076CC5117F7525700845CEA /* HopScotch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HopScotch-Prefix.pch"; sourceTree = "<group>"; };
-		5076CC5217F7525700845CEA /* HSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSAppDelegate.h; sourceTree = "<group>"; };
-		5076CC5317F7525700845CEA /* HSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSAppDelegate.m; sourceTree = "<group>"; };
-		5076CC5617F7525700845CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5076CC5817F7525700845CEA /* HSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSViewController.h; sourceTree = "<group>"; };
-		5076CC5917F7525700845CEA /* HSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSViewController.m; sourceTree = "<group>"; };
-		5076CC5B17F7525700845CEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5076CC6117F7525700845CEA /* HopScotchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopScotchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5076CC6217F7525700845CEA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5076CC6A17F7525700845CEA /* HopScotchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HopScotchTests-Info.plist"; sourceTree = "<group>"; };
 		5076CC6C17F7525700845CEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5076CC6E17F7525700845CEA /* HopScotchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HopScotchTests.m; sourceTree = "<group>"; };
+		50A3149517F7585000074944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		50A3149817F7585000074944 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		50A3149917F7585000074944 /* HopScotch-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HopScotch-Info.plist"; path = "HopScotchApp/HopScotch-Info.plist"; sourceTree = SOURCE_ROOT; };
+		50A3149A17F7585000074944 /* HopScotch-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HopScotch-Prefix.pch"; path = "HopScotchApp/HopScotch-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		50A3149B17F7585000074944 /* HSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSAppDelegate.h; path = HopScotchApp/HSAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		50A3149C17F7585000074944 /* HSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSAppDelegate.m; path = HopScotchApp/HSAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		50A3149D17F7585000074944 /* HSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSApplication.h; path = HopScotchApp/HSApplication.h; sourceTree = SOURCE_ROOT; };
+		50A3149E17F7585000074944 /* HSApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSApplication.m; path = HopScotchApp/HSApplication.m; sourceTree = SOURCE_ROOT; };
+		50A3149F17F7585000074944 /* HSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSViewController.h; path = HopScotchApp/HSViewController.h; sourceTree = SOURCE_ROOT; };
+		50A314A017F7585000074944 /* HSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSViewController.m; path = HopScotchApp/HSViewController.m; sourceTree = SOURCE_ROOT; };
+		50A314A117F7585000074944 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HopScotchApp/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		50A314A217F7585000074944 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = HopScotchApp/main.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,14 +116,21 @@
 		5076CC4917F7525700845CEA /* HopScotch */ = {
 			isa = PBXGroup;
 			children = (
+				50A3149317F7585000074944 /* Base.lproj */,
+				50A3149617F7585000074944 /* en.lproj */,
+				50A3149917F7585000074944 /* HopScotch-Info.plist */,
+				50A3149A17F7585000074944 /* HopScotch-Prefix.pch */,
+				50A3149B17F7585000074944 /* HSAppDelegate.h */,
+				50A3149C17F7585000074944 /* HSAppDelegate.m */,
+				50A3149D17F7585000074944 /* HSApplication.h */,
+				50A3149E17F7585000074944 /* HSApplication.m */,
+				50A3149F17F7585000074944 /* HSViewController.h */,
+				50A314A017F7585000074944 /* HSViewController.m */,
+				50A314A117F7585000074944 /* Images.xcassets */,
+				50A314A217F7585000074944 /* main.m */,
 				5076CC7817F7526300845CEA /* Model */,
 				5076CC7917F7527B00845CEA /* View */,
 				5076CC7A17F7528200845CEA /* Controller */,
-				5076CC5217F7525700845CEA /* HSAppDelegate.h */,
-				5076CC5317F7525700845CEA /* HSAppDelegate.m */,
-				5076CC5817F7525700845CEA /* HSViewController.h */,
-				5076CC5917F7525700845CEA /* HSViewController.m */,
-				5076CC5B17F7525700845CEA /* Images.xcassets */,
 				5076CC4A17F7525700845CEA /* Supporting Files */,
 			);
 			path = HopScotch;
@@ -128,10 +139,6 @@
 		5076CC4A17F7525700845CEA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5076CC4B17F7525700845CEA /* HopScotch-Info.plist */,
-				5076CC4C17F7525700845CEA /* InfoPlist.strings */,
-				5076CC4F17F7525700845CEA /* main.m */,
-				5076CC5117F7525700845CEA /* HopScotch-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -164,7 +171,6 @@
 		5076CC7917F7527B00845CEA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5076CC5517F7525700845CEA /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -175,6 +181,24 @@
 			);
 			name = Controller;
 			sourceTree = "<group>";
+		};
+		50A3149317F7585000074944 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				50A3149417F7585000074944 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = HopScotchApp/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		50A3149617F7585000074944 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				50A3149717F7585000074944 /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = HopScotchApp/en.lproj;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -253,9 +277,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5076CC5C17F7525700845CEA /* Images.xcassets in Resources */,
-				5076CC4E17F7525700845CEA /* InfoPlist.strings in Resources */,
-				5076CC5717F7525700845CEA /* Main.storyboard in Resources */,
+				50A314A517F7585000074944 /* HopScotch-Info.plist in Resources */,
+				50A314A917F7585000074944 /* Images.xcassets in Resources */,
+				50A314A317F7585000074944 /* Main.storyboard in Resources */,
+				50A314A417F7585000074944 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5076CC5A17F7525700845CEA /* HSViewController.m in Sources */,
-				5076CC5017F7525700845CEA /* main.m in Sources */,
-				5076CC5417F7525700845CEA /* HSAppDelegate.m in Sources */,
+				50A314A817F7585000074944 /* HSViewController.m in Sources */,
+				50A314A617F7585000074944 /* HSAppDelegate.m in Sources */,
+				50A314AA17F7585000074944 /* main.m in Sources */,
+				50A314A717F7585000074944 /* HSApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,26 +325,26 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5076CC4C17F7525700845CEA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5076CC4D17F7525700845CEA /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5076CC5517F7525700845CEA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5076CC5617F7525700845CEA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5076CC6B17F7525700845CEA /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5076CC6C17F7525700845CEA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		50A3149417F7585000074944 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50A3149517F7585000074944 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50A3149717F7585000074944 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50A3149817F7585000074944 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -404,8 +430,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HopScotch/HopScotch-Prefix.pch";
-				INFOPLIST_FILE = "HopScotch/HopScotch-Info.plist";
+				GCC_PREFIX_HEADER = "HopScotchApp/HopScotch-Prefix.pch";
+				INFOPLIST_FILE = "HopScotchApp/HopScotch-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -417,8 +443,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HopScotch/HopScotch-Prefix.pch";
-				INFOPLIST_FILE = "HopScotch/HopScotch-Info.plist";
+				GCC_PREFIX_HEADER = "HopScotchApp/HopScotch-Prefix.pch";
+				INFOPLIST_FILE = "HopScotchApp/HopScotch-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -485,6 +511,7 @@
 				5076CC7417F7525700845CEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5076CC7517F7525700845CEA /* Build configuration list for PBXNativeTarget "HopScotchTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +520,7 @@
 				5076CC7717F7525700845CEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
