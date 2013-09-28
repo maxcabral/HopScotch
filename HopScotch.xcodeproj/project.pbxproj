@@ -15,14 +15,25 @@
 		5076CC6517F7525700845CEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076CC4717F7525700845CEA /* UIKit.framework */; };
 		5076CC6D17F7525700845CEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5076CC6B17F7525700845CEA /* InfoPlist.strings */; };
 		5076CC6F17F7525700845CEA /* HopScotchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076CC6E17F7525700845CEA /* HopScotchTests.m */; };
-		50A314A317F7585000074944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A3149417F7585000074944 /* Main.storyboard */; };
 		50A314A417F7585000074944 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50A3149717F7585000074944 /* InfoPlist.strings */; };
-		50A314A517F7585000074944 /* HopScotch-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50A3149917F7585000074944 /* HopScotch-Info.plist */; };
 		50A314A617F7585000074944 /* HSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3149C17F7585000074944 /* HSAppDelegate.m */; };
 		50A314A717F7585000074944 /* HSApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3149E17F7585000074944 /* HSApplication.m */; };
-		50A314A817F7585000074944 /* HSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314A017F7585000074944 /* HSViewController.m */; };
 		50A314A917F7585000074944 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A314A117F7585000074944 /* Images.xcassets */; };
 		50A314AA17F7585000074944 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314A217F7585000074944 /* main.m */; };
+		50A314C117F7594200074944 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314AC17F7594200074944 /* KeychainWrapper.m */; };
+		50A314C217F7594200074944 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314AE17F7594200074944 /* MBProgressHUD.m */; };
+		50A314C317F7594200074944 /* mcabStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314B017F7594200074944 /* mcabStack.m */; };
+		50A314C417F7594200074944 /* MCObservableMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314B217F7594200074944 /* MCObservableMutableDictionary.m */; };
+		50A314C517F7594200074944 /* NSDictionary+WebStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314B417F7594200074944 /* NSDictionary+WebStrings.m */; };
+		50A314C617F7594200074944 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314B617F7594200074944 /* NSString+Utility.m */; };
+		50A314C717F7594200074944 /* NSString+WebStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314B817F7594200074944 /* NSString+WebStrings.m */; };
+		50A314C817F7594200074944 /* UIButton+TextManipulationMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314BA17F7594200074944 /* UIButton+TextManipulationMethods.m */; };
+		50A314C917F7594200074944 /* UIScrollView+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314BC17F7594200074944 /* UIScrollView+Utility.m */; };
+		50A314CA17F7594200074944 /* UIViewController+GestureRecognizerMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314BE17F7594200074944 /* UIViewController+GestureRecognizerMethods.m */; };
+		50A314CB17F7594300074944 /* UIViewController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314C017F7594200074944 /* UIViewController+Utility.m */; };
+		50A314CC17F7597600074944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A3149417F7585000074944 /* Main.storyboard */; };
+		50A314CF17F75A7E00074944 /* HSMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314CE17F75A7E00074944 /* HSMainVC.m */; };
+		50A314D217F75BD900074944 /* HSBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314D117F75BD900074944 /* HSBaseVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +64,34 @@
 		50A3149C17F7585000074944 /* HSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSAppDelegate.m; path = HopScotchApp/HSAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		50A3149D17F7585000074944 /* HSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSApplication.h; path = HopScotchApp/HSApplication.h; sourceTree = SOURCE_ROOT; };
 		50A3149E17F7585000074944 /* HSApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSApplication.m; path = HopScotchApp/HSApplication.m; sourceTree = SOURCE_ROOT; };
-		50A3149F17F7585000074944 /* HSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSViewController.h; path = HopScotchApp/HSViewController.h; sourceTree = SOURCE_ROOT; };
-		50A314A017F7585000074944 /* HSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSViewController.m; path = HopScotchApp/HSViewController.m; sourceTree = SOURCE_ROOT; };
 		50A314A117F7585000074944 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HopScotchApp/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		50A314A217F7585000074944 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = HopScotchApp/main.m; sourceTree = SOURCE_ROOT; };
+		50A314AB17F7594200074944 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainWrapper.h; path = HopScotchApp/Support/KeychainWrapper.h; sourceTree = SOURCE_ROOT; };
+		50A314AC17F7594200074944 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainWrapper.m; path = HopScotchApp/Support/KeychainWrapper.m; sourceTree = SOURCE_ROOT; };
+		50A314AD17F7594200074944 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = HopScotchApp/Support/MBProgressHUD.h; sourceTree = SOURCE_ROOT; };
+		50A314AE17F7594200074944 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = HopScotchApp/Support/MBProgressHUD.m; sourceTree = SOURCE_ROOT; };
+		50A314AF17F7594200074944 /* mcabStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mcabStack.h; path = HopScotchApp/Support/mcabStack.h; sourceTree = SOURCE_ROOT; };
+		50A314B017F7594200074944 /* mcabStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mcabStack.m; path = HopScotchApp/Support/mcabStack.m; sourceTree = SOURCE_ROOT; };
+		50A314B117F7594200074944 /* MCObservableMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCObservableMutableDictionary.h; path = HopScotchApp/Support/MCObservableMutableDictionary.h; sourceTree = SOURCE_ROOT; };
+		50A314B217F7594200074944 /* MCObservableMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCObservableMutableDictionary.m; path = HopScotchApp/Support/MCObservableMutableDictionary.m; sourceTree = SOURCE_ROOT; };
+		50A314B317F7594200074944 /* NSDictionary+WebStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+WebStrings.h"; path = "HopScotchApp/Support/NSDictionary+WebStrings.h"; sourceTree = SOURCE_ROOT; };
+		50A314B417F7594200074944 /* NSDictionary+WebStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+WebStrings.m"; path = "HopScotchApp/Support/NSDictionary+WebStrings.m"; sourceTree = SOURCE_ROOT; };
+		50A314B517F7594200074944 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Utility.h"; path = "HopScotchApp/Support/NSString+Utility.h"; sourceTree = SOURCE_ROOT; };
+		50A314B617F7594200074944 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Utility.m"; path = "HopScotchApp/Support/NSString+Utility.m"; sourceTree = SOURCE_ROOT; };
+		50A314B717F7594200074944 /* NSString+WebStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+WebStrings.h"; path = "HopScotchApp/Support/NSString+WebStrings.h"; sourceTree = SOURCE_ROOT; };
+		50A314B817F7594200074944 /* NSString+WebStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+WebStrings.m"; path = "HopScotchApp/Support/NSString+WebStrings.m"; sourceTree = SOURCE_ROOT; };
+		50A314B917F7594200074944 /* UIButton+TextManipulationMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+TextManipulationMethods.h"; path = "HopScotchApp/Support/UIButton+TextManipulationMethods.h"; sourceTree = SOURCE_ROOT; };
+		50A314BA17F7594200074944 /* UIButton+TextManipulationMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+TextManipulationMethods.m"; path = "HopScotchApp/Support/UIButton+TextManipulationMethods.m"; sourceTree = SOURCE_ROOT; };
+		50A314BB17F7594200074944 /* UIScrollView+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+Utility.h"; path = "HopScotchApp/Support/UIScrollView+Utility.h"; sourceTree = SOURCE_ROOT; };
+		50A314BC17F7594200074944 /* UIScrollView+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+Utility.m"; path = "HopScotchApp/Support/UIScrollView+Utility.m"; sourceTree = SOURCE_ROOT; };
+		50A314BD17F7594200074944 /* UIViewController+GestureRecognizerMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+GestureRecognizerMethods.h"; path = "HopScotchApp/Support/UIViewController+GestureRecognizerMethods.h"; sourceTree = SOURCE_ROOT; };
+		50A314BE17F7594200074944 /* UIViewController+GestureRecognizerMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+GestureRecognizerMethods.m"; path = "HopScotchApp/Support/UIViewController+GestureRecognizerMethods.m"; sourceTree = SOURCE_ROOT; };
+		50A314BF17F7594200074944 /* UIViewController+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Utility.h"; path = "HopScotchApp/Support/UIViewController+Utility.h"; sourceTree = SOURCE_ROOT; };
+		50A314C017F7594200074944 /* UIViewController+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Utility.m"; path = "HopScotchApp/Support/UIViewController+Utility.m"; sourceTree = SOURCE_ROOT; };
+		50A314CD17F75A7E00074944 /* HSMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSMainVC.h; path = HopScotchApp/Controller/HSMainVC.h; sourceTree = SOURCE_ROOT; };
+		50A314CE17F75A7E00074944 /* HSMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSMainVC.m; path = HopScotchApp/Controller/HSMainVC.m; sourceTree = SOURCE_ROOT; };
+		50A314D017F75BD900074944 /* HSBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBaseVC.h; path = HopScotchApp/Controller/HSBaseVC.h; sourceTree = SOURCE_ROOT; };
+		50A314D117F75BD900074944 /* HSBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBaseVC.m; path = HopScotchApp/Controller/HSBaseVC.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,16 +151,12 @@
 		5076CC4917F7525700845CEA /* HopScotch */ = {
 			isa = PBXGroup;
 			children = (
-				50A3149317F7585000074944 /* Base.lproj */,
 				50A3149617F7585000074944 /* en.lproj */,
 				50A3149917F7585000074944 /* HopScotch-Info.plist */,
-				50A3149A17F7585000074944 /* HopScotch-Prefix.pch */,
 				50A3149B17F7585000074944 /* HSAppDelegate.h */,
 				50A3149C17F7585000074944 /* HSAppDelegate.m */,
 				50A3149D17F7585000074944 /* HSApplication.h */,
 				50A3149E17F7585000074944 /* HSApplication.m */,
-				50A3149F17F7585000074944 /* HSViewController.h */,
-				50A314A017F7585000074944 /* HSViewController.m */,
 				50A314A117F7585000074944 /* Images.xcassets */,
 				50A314A217F7585000074944 /* main.m */,
 				5076CC7817F7526300845CEA /* Model */,
@@ -139,6 +170,28 @@
 		5076CC4A17F7525700845CEA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				50A314AB17F7594200074944 /* KeychainWrapper.h */,
+				50A314AC17F7594200074944 /* KeychainWrapper.m */,
+				50A314AD17F7594200074944 /* MBProgressHUD.h */,
+				50A314AE17F7594200074944 /* MBProgressHUD.m */,
+				50A314AF17F7594200074944 /* mcabStack.h */,
+				50A314B017F7594200074944 /* mcabStack.m */,
+				50A314B117F7594200074944 /* MCObservableMutableDictionary.h */,
+				50A314B217F7594200074944 /* MCObservableMutableDictionary.m */,
+				50A314B317F7594200074944 /* NSDictionary+WebStrings.h */,
+				50A314B417F7594200074944 /* NSDictionary+WebStrings.m */,
+				50A314B517F7594200074944 /* NSString+Utility.h */,
+				50A314B617F7594200074944 /* NSString+Utility.m */,
+				50A314B717F7594200074944 /* NSString+WebStrings.h */,
+				50A314B817F7594200074944 /* NSString+WebStrings.m */,
+				50A314B917F7594200074944 /* UIButton+TextManipulationMethods.h */,
+				50A314BA17F7594200074944 /* UIButton+TextManipulationMethods.m */,
+				50A314BB17F7594200074944 /* UIScrollView+Utility.h */,
+				50A314BC17F7594200074944 /* UIScrollView+Utility.m */,
+				50A314BD17F7594200074944 /* UIViewController+GestureRecognizerMethods.h */,
+				50A314BE17F7594200074944 /* UIViewController+GestureRecognizerMethods.m */,
+				50A314BF17F7594200074944 /* UIViewController+Utility.h */,
+				50A314C017F7594200074944 /* UIViewController+Utility.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,6 +208,7 @@
 		5076CC6917F7525700845CEA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				50A3149A17F7585000074944 /* HopScotch-Prefix.pch */,
 				5076CC6A17F7525700845CEA /* HopScotchTests-Info.plist */,
 				5076CC6B17F7525700845CEA /* InfoPlist.strings */,
 			);
@@ -171,6 +225,7 @@
 		5076CC7917F7527B00845CEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				50A3149317F7585000074944 /* Base.lproj */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -178,6 +233,10 @@
 		5076CC7A17F7528200845CEA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				50A314CD17F75A7E00074944 /* HSMainVC.h */,
+				50A314CE17F75A7E00074944 /* HSMainVC.m */,
+				50A314D017F75BD900074944 /* HSBaseVC.h */,
+				50A314D117F75BD900074944 /* HSBaseVC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -277,9 +336,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50A314A517F7585000074944 /* HopScotch-Info.plist in Resources */,
+				50A314CC17F7597600074944 /* Main.storyboard in Resources */,
 				50A314A917F7585000074944 /* Images.xcassets in Resources */,
-				50A314A317F7585000074944 /* Main.storyboard in Resources */,
 				50A314A417F7585000074944 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,10 +357,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50A314A817F7585000074944 /* HSViewController.m in Sources */,
+				50A314C317F7594200074944 /* mcabStack.m in Sources */,
+				50A314D217F75BD900074944 /* HSBaseVC.m in Sources */,
+				50A314C717F7594200074944 /* NSString+WebStrings.m in Sources */,
+				50A314C217F7594200074944 /* MBProgressHUD.m in Sources */,
+				50A314C817F7594200074944 /* UIButton+TextManipulationMethods.m in Sources */,
 				50A314A617F7585000074944 /* HSAppDelegate.m in Sources */,
 				50A314AA17F7585000074944 /* main.m in Sources */,
+				50A314CB17F7594300074944 /* UIViewController+Utility.m in Sources */,
+				50A314CF17F75A7E00074944 /* HSMainVC.m in Sources */,
+				50A314C517F7594200074944 /* NSDictionary+WebStrings.m in Sources */,
+				50A314C917F7594200074944 /* UIScrollView+Utility.m in Sources */,
 				50A314A717F7585000074944 /* HSApplication.m in Sources */,
+				50A314C117F7594200074944 /* KeychainWrapper.m in Sources */,
+				50A314C617F7594200074944 /* NSString+Utility.m in Sources */,
+				50A314C417F7594200074944 /* MCObservableMutableDictionary.m in Sources */,
+				50A314CA17F7594200074944 /* UIViewController+GestureRecognizerMethods.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

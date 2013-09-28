@@ -6,24 +6,31 @@
 //  Copyright (c) 2013 HopScotch. All rights reserved.
 //
 
-#import "HSViewController.h"
+#import "HSMainVC.h"
 
-@interface HSViewController ()
-
+@interface HSMainVC ()
+@property (strong) IBOutlet UITextField *searchField;
 @end
 
-@implementation HSViewController
-
+@implementation HSMainVC
+@synthesize searchField;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)stopEditing
+{
+    [super stopEditing];
+    [self.searchField resignFirstResponder];
 }
 
 @end

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="HSViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="HSMainVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JsW-yT-VwP"/>
                         <viewControllerLayoutGuide type="bottom" id="x1c-Og-2ae"/>
@@ -24,9 +24,15 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="vXZ-lx-hvc" id="VOj-1y-88c"/>
+                            </connections>
                         </textField>
                         <barButtonItem key="rightBarButtonItem" title="🔍 " id="FPC-wc-z96"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchField" destination="ome-uu-ya7" id="xsZ-Vb-ZM5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

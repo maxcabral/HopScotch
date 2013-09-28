@@ -15,4 +15,17 @@
     #import <Foundation/Foundation.h>
 
     #import "HSApplication.h"
+    #import "HSBaseVC.h"
+
+    #import "KeychainWrapper.h"
+    #import "MBProgressHUD.h"
+    #import "MCObservableMutableDictionary.h"
+    #import "NSDictionary+WebStrings.h"
+    #import "NSString+Utility.h"
+    #import "NSString+WebStrings.h"
+    #import "UIButton+TextManipulationMethods.h"
+    #import "UIScrollView+Utility.h"
+    #import "UIViewController+GestureRecognizerMethods.h"
+    #import "UIViewController+Utility.h"
+
 #endif

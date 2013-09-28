@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSViewController : UIViewController
+@interface HSMainVC : HSBaseVC
 
 @end
