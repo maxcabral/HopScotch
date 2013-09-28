@@ -39,6 +39,9 @@
 		50A314D817F75FFC00074944 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A314D717F75FFC00074944 /* CoreLocation.framework */; };
 		50A314DA17F7600100074944 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A314D917F7600100074944 /* QuartzCore.framework */; };
 		50A314DE17F7622800074944 /* HSBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314DD17F7622800074944 /* HSBarCell.m */; };
+		50A314E117F7794A00074944 /* HSBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314E017F7794A00074944 /* HSBarVC.m */; };
+		50A314E417F77A7000074944 /* HSBarItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314E317F77A7000074944 /* HSBarItemCell.m */; };
+		50A314E717F77B7900074944 /* HSBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314E617F77B7900074944 /* HSBaseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,12 @@
 		50A314D917F7600100074944 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		50A314DC17F7622800074944 /* HSBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBarCell.h; path = HopScotchApp/View/UITableViewCells/HSBarCell.h; sourceTree = SOURCE_ROOT; };
 		50A314DD17F7622800074944 /* HSBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBarCell.m; path = HopScotchApp/View/UITableViewCells/HSBarCell.m; sourceTree = SOURCE_ROOT; };
+		50A314DF17F7794A00074944 /* HSBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBarVC.h; path = HopScotchApp/Controller/HSBarVC.h; sourceTree = SOURCE_ROOT; };
+		50A314E017F7794A00074944 /* HSBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBarVC.m; path = HopScotchApp/Controller/HSBarVC.m; sourceTree = SOURCE_ROOT; };
+		50A314E217F77A7000074944 /* HSBarItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBarItemCell.h; path = HopScotchApp/View/UITableViewCells/HSBarItemCell.h; sourceTree = SOURCE_ROOT; };
+		50A314E317F77A7000074944 /* HSBarItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBarItemCell.m; path = HopScotchApp/View/UITableViewCells/HSBarItemCell.m; sourceTree = SOURCE_ROOT; };
+		50A314E517F77B7900074944 /* HSBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBaseCell.h; path = HopScotchApp/View/UITableViewCells/HSBaseCell.h; sourceTree = SOURCE_ROOT; };
+		50A314E617F77B7900074944 /* HSBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBaseCell.m; path = HopScotchApp/View/UITableViewCells/HSBaseCell.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +266,8 @@
 				50A314CE17F75A7E00074944 /* HSMainVC.m */,
 				50A314D017F75BD900074944 /* HSBaseVC.h */,
 				50A314D117F75BD900074944 /* HSBaseVC.m */,
+				50A314DF17F7794A00074944 /* HSBarVC.h */,
+				50A314E017F7794A00074944 /* HSBarVC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -284,6 +295,10 @@
 			children = (
 				50A314DC17F7622800074944 /* HSBarCell.h */,
 				50A314DD17F7622800074944 /* HSBarCell.m */,
+				50A314E217F77A7000074944 /* HSBarItemCell.h */,
+				50A314E317F77A7000074944 /* HSBarItemCell.m */,
+				50A314E517F77B7900074944 /* HSBaseCell.h */,
+				50A314E617F77B7900074944 /* HSBaseCell.m */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -387,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50A314C317F7594200074944 /* mcabStack.m in Sources */,
+				50A314E417F77A7000074944 /* HSBarItemCell.m in Sources */,
 				50A314D217F75BD900074944 /* HSBaseVC.m in Sources */,
 				50A314C717F7594200074944 /* NSString+WebStrings.m in Sources */,
 				50A314C217F7594200074944 /* MBProgressHUD.m in Sources */,
@@ -398,9 +414,11 @@
 				50A314C517F7594200074944 /* NSDictionary+WebStrings.m in Sources */,
 				50A314C917F7594200074944 /* UIScrollView+Utility.m in Sources */,
 				50A314A717F7585000074944 /* HSApplication.m in Sources */,
+				50A314E717F77B7900074944 /* HSBaseCell.m in Sources */,
 				50A314C117F7594200074944 /* KeychainWrapper.m in Sources */,
 				50A314DE17F7622800074944 /* HSBarCell.m in Sources */,
 				50A314C617F7594200074944 /* NSString+Utility.m in Sources */,
+				50A314E117F7794A00074944 /* HSBarVC.m in Sources */,
 				50A314C417F7594200074944 /* MCObservableMutableDictionary.m in Sources */,
 				50A314CA17F7594200074944 /* UIViewController+GestureRecognizerMethods.m in Sources */,
 			);

@@ -1,21 +1,15 @@
 //
-//  HSBarCell.m
+//  HSBaseCell.m
 //  HopScotch
 //
 //  Created by Maxwell Cabral on 9/28/13.
 //  Copyright (c) 2013 HopScotch. All rights reserved.
 //
 
-#import "HSBarCell.h"
+#import "HSBaseCell.h"
 
-@interface HSBarCell ()
-@property (strong)  IBOutlet UILabel        *barNameLabel;
-@property (strong)  IBOutlet UILabel        *barInfo1Label;
-@property (strong)  IBOutlet UILabel        *barInfo2Label;
-@end
-
-@implementation HSBarCell
-
+@implementation HSBaseCell
+@synthesize tableViewController;
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -36,5 +30,4 @@
 {
     
 }
-
 @end

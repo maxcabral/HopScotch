@@ -16,9 +16,12 @@
 
     #import "HSApplication.h"
 
-
+    #import "HSBaseCell.h"
     #import "HSBarCell.h"
+    #import "HSBarItemCell.h"
     #import "HSBaseVC.h"
+    #import "HSMainVC.h"
+    #import "HSBarVC.h"
 
     #import "KeychainWrapper.h"
     #import "MBProgressHUD.h"

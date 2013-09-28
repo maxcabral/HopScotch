@@ -1,20 +1,20 @@
 //
-//  HSBarCell.m
+//  HSBarItemCell.m
 //  HopScotch
 //
 //  Created by Maxwell Cabral on 9/28/13.
 //  Copyright (c) 2013 HopScotch. All rights reserved.
 //
 
-#import "HSBarCell.h"
+#import "HSBarItemCell.h"
 
-@interface HSBarCell ()
-@property (strong)  IBOutlet UILabel        *barNameLabel;
-@property (strong)  IBOutlet UILabel        *barInfo1Label;
-@property (strong)  IBOutlet UILabel        *barInfo2Label;
+@interface HSBarItemCell ()
+@property (strong) IBOutlet UILabel     *menuItemNameLabel;
+@property (strong) IBOutlet UILabel     *menuItemTypeLabel;
+@property (strong) IBOutlet UILabel     *likedLabel;
 @end
 
-@implementation HSBarCell
+@implementation HSBarItemCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

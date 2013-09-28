@@ -1,5 +1,5 @@
 //
-//  HSBarCell.h
+//  HSBarItemCell.h
 //  HopScotch
 //
 //  Created by Maxwell Cabral on 9/28/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSBarCell : HSBaseCell
+@interface HSBarItemCell : HSBaseCell
 
 @end

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Bar Name-->
+        <!--BarVC - Bar Name-->
         <scene sceneID="H77-46-bVj">
             <objects>
-                <viewController id="4hs-V3-ehF" sceneMemberID="viewController">
+                <viewController id="4hs-V3-ehF" customClass="HSBarVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A4w-MM-NgB"/>
                         <viewControllerLayoutGuide type="bottom" id="UBs-f1-uDS"/>
@@ -23,13 +23,52 @@
                                     <constraint firstAttribute="height" constant="171" id="FVd-Kh-MlY"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZK1-I8-Scr">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZK1-I8-Scr">
                                 <rect key="frame" x="0.0" y="285" width="320" height="253"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="253" id="qzp-CW-t3f"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="barItemCell" rowHeight="60" id="8LZ-oD-LX9" customClass="HSBarItemCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8LZ-oD-LX9" id="SJX-5G-LoL">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu Item Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRK-4o-wWw">
+                                                    <rect key="frame" x="20" y="1" width="245" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap/Bottle/Descriptor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkN-kv-dVG">
+                                                    <rect key="frame" x="20" y="21" width="245" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Liked Where/When" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVY-rc-gTW">
+                                                    <rect key="frame" x="20" y="38" width="245" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="likedLabel" destination="lVY-rc-gTW" id="8wm-WC-KXK"/>
+                                            <outlet property="menuItemNameLabel" destination="GRK-4o-wWw" id="Whz-pB-csP"/>
+                                            <outlet property="menuItemTypeLabel" destination="wkN-kv-dVG" id="dve-9K-FF2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4hs-V3-ehF" id="Rrz-Wy-Vos"/>
+                                    <outlet property="delegate" destination="4hs-V3-ehF" id="hLN-gk-MBa"/>
+                                </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sKi-Sg-sf4">
                                 <rect key="frame" x="0.0" y="540" width="320" height="29"/>
@@ -39,6 +78,9 @@
                                     <segment title="Food"/>
                                     <segment title="Check In"/>
                                 </segments>
+                                <connections>
+                                    <action selector="viewOptionsValueChanged:" destination="4hs-V3-ehF" eventType="valueChanged" id="XEE-x1-VcL"/>
+                                </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEQ-qk-IbE">
                                 <rect key="frame" x="0.0" y="190" width="320" height="87"/>
@@ -135,10 +177,39 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Bar Name" id="hHs-Js-T1w"/>
+                    <connections>
+                        <outlet property="barDataTableView" destination="ZK1-I8-Scr" id="3AH-SK-Wo3"/>
+                        <outlet property="barHappyHourDescriptionLabel" destination="mdb-P7-MSm" id="vxa-FH-c81"/>
+                        <outlet property="barHappyHourLabel" destination="Rdq-hW-uud" id="TmK-yi-ONh"/>
+                        <outlet property="barHoursDescriptionLabel" destination="pAU-gc-aOz" id="3e8-Pz-CsF"/>
+                        <outlet property="barHoursLabel" destination="csG-Kf-QfJ" id="cOb-dV-1wH"/>
+                        <outlet property="barImage" destination="igR-od-D5Q" id="dfu-HO-joh"/>
+                        <outlet property="barNameDescriptionLabel" destination="X85-dD-KiK" id="wh6-Ns-9lB"/>
+                        <outlet property="barNameLable" destination="1JM-mp-Q6p" id="xWB-Mc-1JE"/>
+                        <outlet property="viewOptionsSegmentedControl" destination="sKi-Sg-sf4" id="gB8-57-tjJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2NI-ep-nV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1221" y="265"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Z3y-V3-Gt8">
+            <objects>
+                <viewController id="nKT-MY-X23" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tYO-Wo-Zwn"/>
+                        <viewControllerLayoutGuide type="bottom" id="jzz-hz-brK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MrC-IN-fbr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7K-2B-m4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="832"/>
         </scene>
         <!--MainVC-->
         <scene sceneID="ufC-wZ-h7g">
@@ -195,6 +266,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="barInfo1Label" destination="Twq-vk-Jwx" id="XJK-A0-ohT"/>
+                                            <outlet property="barInfo2Label" destination="ww6-z4-nW2" id="dza-gI-XGf"/>
+                                            <outlet property="barNameLabel" destination="bSA-GC-9vT" id="6bp-kA-4mf"/>
                                             <segue destination="4hs-V3-ehF" kind="push" id="DFE-Fi-wGn"/>
                                         </connections>
                                     </tableViewCell>
