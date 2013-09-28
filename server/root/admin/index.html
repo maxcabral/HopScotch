@@ -1,0 +1,30 @@
+<form class="form-inline" method="POST">
+  <div class="well">
+    <input type="submit" name="submit" value="Add Database" class="btn btn-primary">
+    <input type="button" name="add_table" value="New Table" class="btn btn-info">
+  </div>
+  <div class="form-row">
+    <label for="database_name">Database Name:</label>
+    <input name="database_name" type="text">
+  </div>
+  <hr/>
+  <div class="form-row">
+    <label for="database_table">Table Name:</label>
+    <input name="table_name" type="text">
+  </div>
+  <div id="table-with-name">
+    <div class="pt5 form-row">
+      <label>Field Name:</label>
+      <input type="text" value="id" disabled name="field-name">
+      <label>Data Type:</label>
+      <select disabled name="field-type">
+        <option>Int</option>
+      </select>
+      <label class="reset-style">Not Null</label>
+      <input class="pl5" type="checkbox" checked disabled name="field-nullable">
+      <label class="reset-style">Primary Key</label>
+      <input class="pl5" type="checkbox" checked disabled>
+    </div>
+    <div class="form-row"><label></label><input type="button" name="add_field" value="Add Field" class="btn add_field"></div>
+  </div>
+</form>

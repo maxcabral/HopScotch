@@ -1,0 +1,154 @@
+package Lackey::Controller::Root;
+use Moose;
+use namespace::autoclean;
+
+use Try::Tiny;
+use URI::Escape;
+
+BEGIN { extends 'Catalyst::Controller' }
+
+#
+# Sets the actions in this controller to be registered with no prefix
+# so they function identically to actions created in MyApp.pm
+#
+__PACKAGE__->config(namespace => '');
+
+=head1 NAME
+
+Lackey::Controller::Root - Root Controller for Lackey
+
+=head1 DESCRIPTION
+
+[enter your description here]
+
+=cut
+
+=head1 METHODS
+
+=cut
+
+sub begin : Private {
+  my ($self, $c) = @_;
+}
+
+=head2 index
+
+The root page (/)
+
+=cut
+sub index : Path : Args(0) {
+  my ( $self, $c ) = @_;
+  my @nav_columns = (
+    {
+      url => '/project/DB',
+      text => 'Lackey DB',
+    },
+  );
+
+  my $all_projects = $c->model("DB::Project")->search();
+  while (my $project = $all_projects->next) {
+    push @nav_columns, { url => $c->uri_for_action('database',[$project->name]), text => $project->name };
+  }
+
+  $c->stash({
+    section_name => 'All Projects',
+    nav_columns  => \@nav_columns,
+  });
+}
+
+sub database_chain : Chained : PathPart('project') : CaptureArgs(1) {
+  my ($self, $c, $project) = @_;
+  my $db = $c->model("$project");
+  
+  $c->go('default') unless $db;
+
+  $c->stash({ project => $project, schema => $db });
+}
+
+sub database : Chained('database_chain') : PathPart('') : Args(0) {
+  my ($self, $c) = @_;
+  my $project = $c->stash->{project};
+  my $db = $c->stash->{schema};
+
+  #Build the nav columns by mapping the schmea infomration for the table into the expected hash data structure
+  #Urls rely on the DBIx::Class schema table name but we want to display the actual table name as well in the view.
+  #Hence the gibberish below.
+  my @nav_columns = map {
+    { url => $c->uri_for_action('table',[$project,$_]), text => $_ . '/' . $db->schema->source_registrations->{$_}->name }
+  } sort { lc($a) cmp lc($b) } keys %$db->schema->source_registrations;
+
+  $c->stash({
+    back_url     => $c->uri_for_action('index'),
+    nav_columns  => \@nav_columns ,
+    section_name => $project,    
+  });
+  use Data::Dumper;
+#  warn $db->registered_classes;
+  warn Dumper $db->schema->source_registrations;
+}
+
+
+sub table_chain : Chained('database_chain') : PathPart('table') : CaptureArgs(1) {
+  my ($self, $c, $table) = @_;
+  my $project = $c->stash->{project};
+  my $db;
+
+  try {
+    $db = $c->stash->{schema}->resultset($table);
+  } catch {
+  
+  };
+  $c->go('default') unless $db;
+
+  $c->stash({ project => $project, table => $table, schema => $db });
+}
+
+sub table : Chained('table_chain') : PathPart('') : Args(0) {
+  my ($self, $c,) = @_;
+  my $project = $c->stash->{project};
+  my $table = $c->stash->{table};
+  my $db = $c->stash->{schema};
+
+  $c->go('default') unless $db;
+
+  $c->stash({
+    back_url     => $c->uri_for_action('database',[$project]),
+#    nav_columns  => \@nav_columns ,
+    section_name => $table,
+  });
+}
+
+=head2 default
+
+Standard 404 error page
+
+=cut
+
+sub default :Path {
+    my ( $self, $c ) = @_;
+    $c->response->body( 'Page not found' );
+    $c->response->status(404);
+}
+
+=head2 end
+
+Attempt to render a view, if needed.
+
+=cut
+
+sub end : ActionClass('RenderView') {}
+
+=head1 AUTHOR
+
+Maxwell Cabral
+
+=head1 LICENSE
+
+This library is free software. You can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=cut
+
+__PACKAGE__->meta->make_immutable;
+
+1;
