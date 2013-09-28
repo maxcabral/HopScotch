@@ -1,5 +1,5 @@
 //
-//  HSViewController.h
+//  HSBarCell.h
 //  HopScotch
 //
 //  Created by Maxwell Cabral on 9/28/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HSMainVC : HSBaseVC <UITableViewDataSource, UITableViewDelegate>
-
+@interface HSBarCell : UITableViewCell
+- (void)setupView;
 @end
