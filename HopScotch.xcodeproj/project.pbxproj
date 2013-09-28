@@ -42,6 +42,7 @@
 		50A314E117F7794A00074944 /* HSBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314E017F7794A00074944 /* HSBarVC.m */; };
 		50A314E417F77A7000074944 /* HSBarItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314E317F77A7000074944 /* HSBarItemCell.m */; };
 		50A314E717F77B7900074944 /* HSBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314E617F77B7900074944 /* HSBaseCell.m */; };
+		50A314EA17F7884000074944 /* HSBarItemDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314E917F7884000074944 /* HSBarItemDetailsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		50A314E317F77A7000074944 /* HSBarItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBarItemCell.m; path = HopScotchApp/View/UITableViewCells/HSBarItemCell.m; sourceTree = SOURCE_ROOT; };
 		50A314E517F77B7900074944 /* HSBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBaseCell.h; path = HopScotchApp/View/UITableViewCells/HSBaseCell.h; sourceTree = SOURCE_ROOT; };
 		50A314E617F77B7900074944 /* HSBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBaseCell.m; path = HopScotchApp/View/UITableViewCells/HSBaseCell.m; sourceTree = SOURCE_ROOT; };
+		50A314E817F7884000074944 /* HSBarItemDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBarItemDetailsVC.h; path = HopScotchApp/Controller/HSBarItemDetailsVC.h; sourceTree = SOURCE_ROOT; };
+		50A314E917F7884000074944 /* HSBarItemDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBarItemDetailsVC.m; path = HopScotchApp/Controller/HSBarItemDetailsVC.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +271,8 @@
 				50A314D117F75BD900074944 /* HSBaseVC.m */,
 				50A314DF17F7794A00074944 /* HSBarVC.h */,
 				50A314E017F7794A00074944 /* HSBarVC.m */,
+				50A314E817F7884000074944 /* HSBarItemDetailsVC.h */,
+				50A314E917F7884000074944 /* HSBarItemDetailsVC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 				50A314C617F7594200074944 /* NSString+Utility.m in Sources */,
 				50A314E117F7794A00074944 /* HSBarVC.m in Sources */,
 				50A314C417F7594200074944 /* MCObservableMutableDictionary.m in Sources */,
+				50A314EA17F7884000074944 /* HSBarItemDetailsVC.m in Sources */,
 				50A314CA17F7594200074944 /* UIViewController+GestureRecognizerMethods.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
