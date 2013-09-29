@@ -16,12 +16,29 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZK1-I8-Scr">
-                                <rect key="frame" x="0.0" y="63" width="320" height="456"/>
+                            <tabBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkX-ka-Y1L">
+                                <rect key="frame" x="0.0" y="455" width="320" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Beer" image="beer.png" id="Thp-7w-PuN">
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Liquor" image="liquor.png" id="yb2-ee-aTd">
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Wine" image="wine.png" id="1TB-ha-Doe">
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
+                                    </tabBarItem>
+                                </items>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </tabBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZK1-I8-Scr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="456" id="43m-zs-8Xn"/>
+                                    <constraint firstAttribute="height" constant="455" id="Olb-yE-ykg"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="barItemCell" rowHeight="80" id="8LZ-oD-LX9" customClass="HSBarItemCell">
@@ -64,32 +81,15 @@
                                     <outlet property="delegate" destination="4hs-V3-ehF" id="hLN-gk-MBa"/>
                                 </connections>
                             </tableView>
-                            <tabBar contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkX-ka-Y1L">
-                                <rect key="frame" x="0.0" y="455" width="320" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem title="Beer" image="beer.png" id="Thp-7w-PuN">
-                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
-                                    </tabBarItem>
-                                    <tabBarItem title="Liquor" image="liquor.png" id="yb2-ee-aTd">
-                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
-                                    </tabBarItem>
-                                    <tabBarItem title="Wine" image="wine.png" id="1TB-ha-Doe">
-                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
-                                    </tabBarItem>
-                                </items>
-                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IkX-ka-Y1L" firstAttribute="top" secondItem="ZK1-I8-Scr" secondAttribute="bottom" id="6yH-Ip-zud"/>
-                            <constraint firstItem="ZK1-I8-Scr" firstAttribute="top" secondItem="o3f-BP-K0s" secondAttribute="top" constant="64" id="P7Q-n5-Sfz"/>
-                            <constraint firstItem="ZK1-I8-Scr" firstAttribute="leading" secondItem="o3f-BP-K0s" secondAttribute="leading" id="PYW-Fd-PfV"/>
-                            <constraint firstItem="IkX-ka-Y1L" firstAttribute="leading" secondItem="ZK1-I8-Scr" secondAttribute="leading" id="RUk-hg-e2d"/>
-                            <constraint firstItem="IkX-ka-Y1L" firstAttribute="trailing" secondItem="ZK1-I8-Scr" secondAttribute="trailing" id="qtH-mL-Zrb"/>
-                            <constraint firstAttribute="trailing" secondItem="ZK1-I8-Scr" secondAttribute="trailing" id="wFO-MT-y84"/>
+                            <constraint firstItem="ZK1-I8-Scr" firstAttribute="bottom" secondItem="IkX-ka-Y1L" secondAttribute="top" id="0Eb-BK-94F"/>
+                            <constraint firstItem="ZK1-I8-Scr" firstAttribute="leading" secondItem="o3f-BP-K0s" secondAttribute="leading" id="U7G-gz-8DV"/>
+                            <constraint firstItem="ZK1-I8-Scr" firstAttribute="top" secondItem="o3f-BP-K0s" secondAttribute="top" id="b0g-Gy-NHA"/>
+                            <constraint firstAttribute="trailing" secondItem="ZK1-I8-Scr" secondAttribute="trailing" id="db0-SN-e3S"/>
+                            <constraint firstItem="ZK1-I8-Scr" firstAttribute="leading" secondItem="IkX-ka-Y1L" secondAttribute="leading" id="dkf-De-bvF"/>
+                            <constraint firstItem="ZK1-I8-Scr" firstAttribute="trailing" secondItem="IkX-ka-Y1L" secondAttribute="trailing" id="mwQ-eO-yTC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Menu" id="hHs-Js-T1w">
@@ -230,7 +230,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0yR-96-LrT">
-                                <rect key="frame" x="0.0" y="118" width="320" height="386"/>
+                                <rect key="frame" x="0.0" y="138" width="320" height="366"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -262,7 +262,7 @@
                                 </connections>
                             </tableView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Twe-Mb-xAJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="CgB-r6-WBb"/>
@@ -296,9 +296,10 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="HTN-84-g0j">
                         <nil key="title"/>
-                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" id="ome-uu-ya7">
-                            <rect key="frame" x="23" y="7" width="244" height="30"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Browse Drinks" minimumFontSize="17" clearButtonMode="whileEditing" id="ome-uu-ya7">
+                            <rect key="frame" x="8" y="7" width="259" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="1" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
@@ -306,6 +307,7 @@
                             </connections>
                         </textField>
                         <barButtonItem key="rightBarButtonItem" image="search.png" width="20" style="plain" id="FPC-wc-z96">
+                            <color key="tintColor" red="1" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="searchButtonTUI:" destination="vXZ-lx-hvc" id="a82-aO-JQR"/>
                             </connections>
