@@ -70,7 +70,7 @@ sub table_GET {
 
   my $result_count = $results->count;
   if ($result_count == 0){
-    return $self->status_not_found($c, message => "Cannot find what you were looking for!", );
+    return $self->status_ok( $c, entity => { count => 0, records => [] });
   } elsif ($result_count == 1) {
     return $self->status_ok( $c, entity => $self->process_entity($results->first()) );
   } else {
@@ -294,7 +294,7 @@ sub process_entity {
   my ($self, $data) = @_;
   if (ref $data && UNIVERSAL::can($data,'isa')){
     if ($data->isa('DBIx::Class::Row')) {
-      $data = { $data->get_columns() };
+      $data = { count => 1, records => [$data->get_columns()] };
     } elsif ($data->isa('DBIx::Class::ResultSet')){
       my @results = map { { $_->get_columns } } $data->all();
       $data = { count => scalar @results, records => \@results };

@@ -19,8 +19,12 @@
 
 @implementation HSAPIBase
 @synthesize delegate, response, responseString, rawResponse, errorMessages;
+@synthesize successCallback;
+@synthesize failureCallback;
 @synthesize apiCallCount;
-
+@synthesize apiResultCollectionIdentifier;
+@synthesize apiResultSingleIdentifier;
+@synthesize schemaClass;
 - (id)init
 {
     self = [super init];
@@ -89,7 +93,7 @@
     [self->queue cancelAllOperations];
 }
 
-- (void)makeRequestWithMethod:(enum K_HTTPMethods)method successCallback:(SEL)successCallback failureCallback:(SEL)failureCallback andData:(NSDictionary*)sentParameters;
+- (void)makeRequestWithMethod:(enum K_HTTPMethods)method target:(id)target successCallback:(SEL)success failureCallback:(SEL)failure andData:(NSDictionary*)sentParameters;
 {
 #ifdef K_LDI_API_DEBUG_MODE
     NSString *reqUri = @"http://wksystems.net/epres/api/index";
@@ -115,10 +119,10 @@
         [request setHTTPBody:ReqData];
     }
     
-    [self sendAsyncRequest:request successCallback:successCallback failureCallback:failureCallback];
+    [self sendAsyncRequest:request target:target successCallback:success failureCallback:failure];
 }
 
-- (void)sendAsyncRequest:(NSMutableURLRequest*)request successCallback:(SEL)successCallback failureCallback:(SEL)failureCallback
+- (void)sendAsyncRequest:(NSMutableURLRequest*)request target:(id)target successCallback:(SEL)success failureCallback:(SEL)failure
 {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     self.apiCallCount++;
@@ -133,18 +137,9 @@
              NSError *error;
              self.response = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers|NSJSONReadingAllowFragments error:&error];
                           
-             if (self.response && delegate)
+             if (self.response && target)
              {
-                 NSString *success = [self.response objectForKey:@"success"];
-                 if (success == nil || [success isEqualToString:@"FALSE"]){
-                     [delegate performSelectorOnMainThread:failureCallback
-                                                 withObject:self
-                                              waitUntilDone:NO];
-                     return;
-                 }
-                 
-                 
-                 [delegate performSelectorOnMainThread:successCallback
+                 [target performSelectorOnMainThread:success
                                             withObject:self
                                          waitUntilDone:NO];
                  return;
@@ -170,12 +165,59 @@
          }
          //If its a comm error, call the callback without a message.  The callback will check sender.lastResponse
          //Call on main thread to prevent lockups and prevent a slow context switch.
-         if (delegate){
-             [delegate performSelectorOnMainThread:failureCallback
+         if (target){
+             [target performSelectorOnMainThread:failure
                                         withObject:self
                                      waitUntilDone:NO];
          }
          return;
      }];
+}
+
+/********
+ deserializeCollectionOfRecords
+ 
+ Success event handler intermediate used to convert raw
+ NSDictionary data from the API into actual Schema classes.
+ *******/
+- (void)deserializeCollectionOfRecords:(HSAPIBase*)request
+{
+    NSArray        *records = request[self.apiResultCollectionIdentifier];
+    NSMutableArray *deserializedRecords = [[NSMutableArray alloc] initWithCapacity:records.count];
+    
+    //Insert each NSDictionary into the appropriate wrapper object
+    for (NSDictionary *record in records) {
+        HSDictionaryWrapper *newRecord = [[self.schemaClass alloc] initWithDictonary:record];
+        newRecord.inStorage = YES;
+        [deserializedRecords addObject:newRecord];
+    }
+    
+    records = nil;
+    ((NSMutableDictionary*)request.response)[self.apiResultCollectionIdentifier] = deserializedRecords;
+    [self.delegate performSelectorOnMainThread:self.successCallback withObject:request waitUntilDone:NO];
+}
+
+/********
+ deserializeSingleRecord
+ 
+ Success event handler intermediate used to convert raw
+ NSDictionary data from the API into actual Schema classes.
+ *******/
+- (void)deserializeSingleRecord:(HSAPIBase*)request
+{
+    NSDictionary *record = request[self.apiResultSingleIdentifier];
+    
+    if (record){
+        HSDictionaryWrapper *newRecord = [[self.schemaClass alloc] initWithDictonary:record];
+        newRecord.inStorage = YES;
+        ((NSMutableDictionary*)request.response)[self.apiResultSingleIdentifier] = newRecord;
+    }
+    
+    [self.delegate performSelectorOnMainThread:self.successCallback withObject:request waitUntilDone:NO];
+}
+
+- (void)failureDelegatePassthrough:(HSAPIBase*)request
+{
+    [self.delegate performSelectorOnMainThread:self.failureCallback withObject:request waitUntilDone:NO];
 }
 @end

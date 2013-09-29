@@ -8,7 +8,7 @@
 
 @interface HSDictionaryWrapper ()
 {
-    NSMutableDictionary *internalDictionary;
+    NSMutableDictionary *_internalDictionary;
     BOOL                _inStorage;
 }
 @end
@@ -24,7 +24,7 @@
 {
     self = [super init];
     if (self){
-        self->internalDictionary = [data mutableCopy];
+        self->_internalDictionary = [data mutableCopy];
         //Assume it's not in storage by default, let the serializers figure it out
         self->_inStorage = NO;
     }
@@ -37,22 +37,22 @@
     [self setInStorage:NO];
 }
 
-- (NSDictionary*)getInternalDictionary
+- (NSMutableDictionary*)getInternalDictionary
 {
-    return internalDictionary;
+    return _internalDictionary;
 }
 
 - (void)setInStorage:(BOOL)value
 {
     if (value == YES){
         //Set observers to monitor changes. If anything changes, we'll want to know so we can store it later.
-        for (id key in self->internalDictionary) {
-            [self->internalDictionary addObserver:self forKeyPath:[key description] options:0 context:(__bridge void *)(key)];
+        for (id key in self->_internalDictionary) {
+            [self->_internalDictionary addObserver:self forKeyPath:[key description] options:0 context:(__bridge void *)(key)];
         }
     } else {
-        for (id key in self->internalDictionary) {
+        for (id key in self->_internalDictionary) {
             @try {
-                [self->internalDictionary removeObserver:self forKeyPath:[key description] context:(__bridge void *)(key)];
+                [self->_internalDictionary removeObserver:self forKeyPath:[key description] context:(__bridge void *)(key)];
             }
             @catch (NSException *exception) {
                 NSLog(@"Issue removing observer: %@",exception.description);
@@ -74,7 +74,7 @@
 - (id)copyWithZone:(NSZone *)zone
 {
     id copy = [[self class] allocWithZone:zone];
-    copy = [(HSDictionaryWrapper*)copy initWithDictonary:[self->internalDictionary copy]];
+    copy = [(HSDictionaryWrapper*)copy initWithDictonary:[self->_internalDictionary copy]];
     ((HSDictionaryWrapper*)copy)->_inStorage = self->_inStorage;
     return copy;
 }
@@ -82,7 +82,7 @@
 - (void)shallowCopy:(HSDictionaryWrapper*)target
 {
     if (target){
-        [self->internalDictionary addEntriesFromDictionary:target->internalDictionary];
+        [self->_internalDictionary addEntriesFromDictionary:target->_internalDictionary];
         self->_inStorage = target->_inStorage;
     }
 }

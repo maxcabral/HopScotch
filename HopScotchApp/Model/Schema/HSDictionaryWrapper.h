@@ -11,7 +11,7 @@
 @end
 
 @interface HSDictionaryWrapper : NSObject <HSDictionaryWrapperClass, NSCopying>
-@property (getter = getInternalDictionary, readonly)                NSDictionary *internalDictionary;
+@property (getter = getInternalDictionary, readonly)                NSMutableDictionary *internalDictionary;
 @property (nonatomic, getter = inStorage, setter = setInStorage:)   BOOL          inStorage;
 - (id)initWithDictonary:(NSDictionary*)data;
 - (NSDictionary*)getInternalDictionary;
