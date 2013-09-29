@@ -74,6 +74,7 @@
 		50A314FC17F7FCED00074944 /* HSBarMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314FB17F7FCED00074944 /* HSBarMenuVC.m */; };
 		50A3150017F8A00C00074944 /* HSBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314FF17F8A00C00074944 /* HSBar.m */; };
 		50A3150317F8A54B00074944 /* HSBeverage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3150217F8A54B00074944 /* HSBeverage.m */; };
+		50A3150617F8A65C00074944 /* HSBarAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3150517F8A65C00074944 /* HSBarAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +184,8 @@
 		50A314FF17F8A00C00074944 /* HSBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSBar.m; sourceTree = "<group>"; };
 		50A3150117F8A54B00074944 /* HSBeverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSBeverage.h; sourceTree = "<group>"; };
 		50A3150217F8A54B00074944 /* HSBeverage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSBeverage.m; sourceTree = "<group>"; };
+		50A3150417F8A65C00074944 /* HSBarAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBarAPI.h; path = HopScotchApp/Model/API/HSBarAPI.h; sourceTree = SOURCE_ROOT; };
+		50A3150517F8A65C00074944 /* HSBarAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBarAPI.m; path = HopScotchApp/Model/API/HSBarAPI.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -434,6 +437,8 @@
 			children = (
 				50A314EE17F7C89800074944 /* HSAPIBase.h */,
 				50A314EF17F7C89800074944 /* HSAPIBase.m */,
+				50A3150417F8A65C00074944 /* HSBarAPI.h */,
+				50A3150517F8A65C00074944 /* HSBarAPI.m */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -585,6 +590,7 @@
 				50A314C617F7594200074944 /* NSString+Utility.m in Sources */,
 				50A314E117F7794A00074944 /* HSBarVC.m in Sources */,
 				50A314C417F7594200074944 /* MCObservableMutableDictionary.m in Sources */,
+				50A3150617F8A65C00074944 /* HSBarAPI.m in Sources */,
 				50A3150017F8A00C00074944 /* HSBar.m in Sources */,
 				50A314EA17F7884000074944 /* HSBarItemDetailsVC.m in Sources */,
 				50A314CA17F7594200074944 /* UIViewController+GestureRecognizerMethods.m in Sources */,

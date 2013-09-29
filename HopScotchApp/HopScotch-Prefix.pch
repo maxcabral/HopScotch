@@ -17,6 +17,9 @@
     #import "HSApplication.h"
 
     #import "HSAPIBase.h"
+    #import "HSDictionaryWrapper.h"
+    #import "HSBar.h"
+    #import "HSBeverage.h"
 
     #import "HSBaseCell.h"
     #import "HSBarCell.h"

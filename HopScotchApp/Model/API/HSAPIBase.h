@@ -19,6 +19,11 @@ enum K_HTTPMethods {
 
 @interface HSAPIBase : NSObject
 @property (weak)                                        id              delegate;
+@property                                               SEL             successCallback;
+@property                                               SEL             failureCallback;
+@property (strong, readonly)                            Class           schemaClass;
+@property (strong, readonly)                            NSString        *apiResultSingleIdentifier;
+@property (strong, readonly)                            NSString        *apiResultCollectionIdentifier;
 @property (strong, readonly)                            NSDictionary    *response;
 @property (strong, readonly)                            NSString        *responseString;
 @property (strong, readonly)                            NSURLResponse   *rawResponse;
@@ -28,8 +33,12 @@ enum K_HTTPMethods {
 
 - (id)initWithDelegate:(id)delegate;
 - (void)cancelRequests;
-- (void)makeRequestWithMethod:(enum K_HTTPMethods)method successCallback:(SEL)successCallback failureCallback:(SEL)failureCallback andData:(NSDictionary*)parameters;
+- (void)makeRequestWithMethod:(enum K_HTTPMethods)method target:(id)target successCallback:(SEL)successCallback failureCallback:(SEL)failureCallback andData:(NSDictionary*)parameters;
 - (NSString*)getFriendlyResponseError;
+
+- (void)deserializeCollectionOfRecords:(HSAPIBase*)request;
+- (void)deserializeSingleRecord:(HSAPIBase*)request;
+- (void)failureDelegatePassthrough:(HSAPIBase*)request;
 
 //subscripting support. Redirect to the same methods withing self.response
 - (id)objectForKeyedSubscript:(id)key;
