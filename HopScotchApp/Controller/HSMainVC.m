@@ -11,7 +11,7 @@
 @interface HSMainVC ()
 @property (strong) IBOutlet UITextField             *searchField;
 @property (strong) IBOutlet UIButton                *locateMeButton;
-@property (strong)          NSMutableDictionary     *tableViewData;
+@property (strong)          NSMutableArray          *tableViewData;
 @end
 
 @implementation HSMainVC
@@ -21,7 +21,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.tableViewData = [[NSMutableArray alloc] init];
 
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    HSBarAPI *barSearch = [[HSBarAPI alloc] initWithDelegate:self];
+    barSearch.successCallback = @selector(barSearchSuccess:);
+    barSearch.failureCallback = @selector(barSearchFailure:);
+    [barSearch searchForBarsWithParameters:@{}];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,6 +51,16 @@
 
 - (IBAction)locateMeTUI:(id)sender {
 
+}
+
+- (void)barSearchSuccess:(HSBarAPI*)request
+{
+    self.tableViewData = request[request.apiResultCollectionIdentifier];
+}
+
+- (void)barSearchFailure:(HSBarAPI*)request
+{
+    
 }
 
 /********
@@ -66,7 +85,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return self.tableViewData.count;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
