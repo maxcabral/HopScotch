@@ -60,6 +60,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    CGRect frame = self.viewOptionsSegmentedControl.frame;
+    [self.viewOptionsSegmentedControl setFrame:CGRectMake(frame.origin.x, frame.origin.y -20, 320, 52)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,7 +91,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60.0;
+    return 50.0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
