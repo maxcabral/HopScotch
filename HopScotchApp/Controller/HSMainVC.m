@@ -11,12 +11,14 @@
 @interface HSMainVC ()
 @property (strong) IBOutlet UITextField             *searchField;
 @property (strong) IBOutlet UIButton                *locateMeButton;
+@property (strong) IBOutlet UITableView             *barTableView;
 @property (strong)          NSMutableArray          *tableViewData;
 @end
 
 @implementation HSMainVC
 @synthesize searchField;
 @synthesize locateMeButton;
+@synthesize barTableView;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
