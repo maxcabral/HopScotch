@@ -69,6 +69,8 @@
 		50A314EA17F7884000074944 /* HSBarItemDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314E917F7884000074944 /* HSBarItemDetailsVC.m */; };
 		50A314F017F7C89800074944 /* HSAPIBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314EF17F7C89800074944 /* HSAPIBase.m */; };
 		50A314F417F7C89F00074944 /* HSDictionaryWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314F317F7C89F00074944 /* HSDictionaryWrapper.m */; };
+		50A314F717F7F3F000074944 /* bar-sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A314F617F7F3F000074944 /* bar-sample.jpg */; };
+		50A314F917F7F4F400074944 /* beer-sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A314F817F7F4F400074944 /* beer-sample.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +171,8 @@
 		50A314EF17F7C89800074944 /* HSAPIBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSAPIBase.m; path = HopScotchApp/Model/API/HSAPIBase.m; sourceTree = SOURCE_ROOT; };
 		50A314F217F7C89F00074944 /* HSDictionaryWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDictionaryWrapper.h; sourceTree = "<group>"; };
 		50A314F317F7C89F00074944 /* HSDictionaryWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDictionaryWrapper.m; sourceTree = "<group>"; };
+		50A314F617F7F3F000074944 /* bar-sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "bar-sample.jpg"; path = "HopScotchApp/Assets/bar-sample.jpg"; sourceTree = SOURCE_ROOT; };
+		50A314F817F7F4F400074944 /* beer-sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "beer-sample.jpg"; path = "HopScotchApp/Assets/beer-sample.jpg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +206,8 @@
 		250452AE17F78AB3008E379A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				50A314F817F7F4F400074944 /* beer-sample.jpg */,
+				50A314F617F7F3F000074944 /* bar-sample.jpg */,
 				2523D36F17F7A7F30063B813 /* like.png */,
 				2523D37017F7A7F30063B813 /* like@2x.png */,
 				250452AF17F78ABD008E379A /* checkin-tab-selected.png */,
@@ -495,12 +501,14 @@
 				2523D38F17F7CD950063B813 /* beer@2x.png in Resources */,
 				50A314CC17F7597600074944 /* Main.storyboard in Resources */,
 				250452CD17F78ABD008E379A /* search.png in Resources */,
+				50A314F917F7F4F400074944 /* beer-sample.jpg in Resources */,
 				50A314A917F7585000074944 /* Images.xcassets in Resources */,
 				250452C717F78ABD008E379A /* food-selected.png in Resources */,
 				250452C417F78ABD008E379A /* drinks-tab-selected@2x.png in Resources */,
 				250452C217F78ABD008E379A /* checkin-tab@2x.png in Resources */,
 				250452CA17F78ABD008E379A /* food@2x.png in Resources */,
 				250452C017F78ABD008E379A /* checkin-tab-selected@2x.png in Resources */,
+				50A314F717F7F3F000074944 /* bar-sample.jpg in Resources */,
 				2523D39117F7CD950063B813 /* liquor@2x.png in Resources */,
 				2523D39017F7CD950063B813 /* liquor.png in Resources */,
 				250452BF17F78ABD008E379A /* checkin-tab-selected.png in Resources */,
