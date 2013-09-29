@@ -87,6 +87,7 @@
 		50A3150017F8A00C00074944 /* HSBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314FF17F8A00C00074944 /* HSBar.m */; };
 		50A3150317F8A54B00074944 /* HSBeverage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3150217F8A54B00074944 /* HSBeverage.m */; };
 		50A3150617F8A65C00074944 /* HSBarAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3150517F8A65C00074944 /* HSBarAPI.m */; };
+		50A3150C17F8C3A300074944 /* HSBeverageAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3150B17F8C3A300074944 /* HSBeverageAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,6 +211,8 @@
 		50A3150217F8A54B00074944 /* HSBeverage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSBeverage.m; sourceTree = "<group>"; };
 		50A3150417F8A65C00074944 /* HSBarAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBarAPI.h; path = HopScotchApp/Model/API/HSBarAPI.h; sourceTree = SOURCE_ROOT; };
 		50A3150517F8A65C00074944 /* HSBarAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBarAPI.m; path = HopScotchApp/Model/API/HSBarAPI.m; sourceTree = SOURCE_ROOT; };
+		50A3150A17F8C3A300074944 /* HSBeverageAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBeverageAPI.h; path = HopScotchApp/Model/API/HSBeverageAPI.h; sourceTree = SOURCE_ROOT; };
+		50A3150B17F8C3A300074944 /* HSBeverageAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBeverageAPI.m; path = HopScotchApp/Model/API/HSBeverageAPI.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,6 +474,8 @@
 		50A314F517F7C8A400074944 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				50A3150A17F8C3A300074944 /* HSBeverageAPI.h */,
+				50A3150B17F8C3A300074944 /* HSBeverageAPI.m */,
 				50A314EE17F7C89800074944 /* HSAPIBase.h */,
 				50A314EF17F7C89800074944 /* HSAPIBase.m */,
 				50A3150417F8A65C00074944 /* HSBarAPI.h */,
@@ -631,6 +636,7 @@
 				50A314CF17F75A7E00074944 /* HSMainVC.m in Sources */,
 				50A314C517F7594200074944 /* NSDictionary+WebStrings.m in Sources */,
 				50A314C917F7594200074944 /* UIScrollView+Utility.m in Sources */,
+				50A3150C17F8C3A300074944 /* HSBeverageAPI.m in Sources */,
 				50A314A717F7585000074944 /* HSApplication.m in Sources */,
 				50A314E717F77B7900074944 /* HSBaseCell.m in Sources */,
 				50A314C117F7594200074944 /* KeychainWrapper.m in Sources */,

@@ -99,7 +99,7 @@
     NSString *reqUrl;
     
     if (method == K_HTTP_GET || method == K_HTTP_DELETE){
-        reqUrl = [NSString stringWithFormat:@"%@?%@",url,[parameters queryString]];
+        reqUrl = [NSString stringWithFormat:@"%@%@",url,[parameters queryString]];
     } else {
         reqUrl = url;
     }

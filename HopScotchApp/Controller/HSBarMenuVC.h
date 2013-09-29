@@ -9,5 +9,5 @@
 #import "HSBaseVC.h"
 
 @interface HSBarMenuVC : HSBaseVC <UITableViewDelegate, UITableViewDataSource, UITabBarDelegate>
-
+@property (strong) HSBar *barData;
 @end

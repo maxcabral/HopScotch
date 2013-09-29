@@ -37,4 +37,13 @@
     
 }
 
+- (void)applyData:(HSBeverage*)data
+{
+    srand(time(NULL));
+    int likedRand = rand() % 100;
+    self.menuItemNameLabel.text = data.name;
+    self.menuItemTypeLabel.text = data.drinkSubType;
+    self.likedLabel.text        = (likedRand > 75 ? @"Liked Today" : (likedRand > 30 ? @"Liked Yesterday" : @"Never Liked"));
+}
+
 @end

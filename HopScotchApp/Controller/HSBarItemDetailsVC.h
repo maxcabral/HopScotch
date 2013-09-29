@@ -9,5 +9,5 @@
 #import "HSBaseVC.h"
 
 @interface HSBarItemDetailsVC : HSBaseVC
-
+@property (strong) HSBeverage *beverageData;
 @end

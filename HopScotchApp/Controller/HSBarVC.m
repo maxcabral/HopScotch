@@ -54,7 +54,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    
+    if ([segue.destinationViewController isKindOfClass:[HSBarMenuVC class]]){
+        HSBarMenuVC *detailsVC = segue.destinationViewController;
+        detailsVC.barData = self.barData;
+    }
 }
 
 @end

@@ -23,6 +23,7 @@
     #import "HSBar.h"
     #import "HSBeverage.h"
     #import "HSBarAPI.h"
+    #import "HSBeverageAPI.h"
 
     #import "HSBaseCell.h"
     #import "HSBarCell.h"
@@ -32,6 +33,7 @@
     #import "HSBarVC.h"
     #import "HSBarMenuVC.h"
     #import "HSBarMenuVC.h"
+    #import "HSBarItemDetailsVC.h"
 
     #import "KeychainWrapper.h"
     #import "MBProgressHUD.h"

@@ -11,7 +11,7 @@
 @implementation HSBar
 - (NSString*)barID
 {
-    return self.internalDictionary[@"barID"];
+    return self.internalDictionary[@"id"];
 }
 
 - (void)setBarID:(NSString*)barID
@@ -51,7 +51,7 @@
 
 - (NSString*)happyHour
 {
-    return self.internalDictionary[@"happyHour"];
+    return self.internalDictionary[@"happy_hour"];
 }
 
 - (void)setHappyHour:(NSString*)happyHour

@@ -21,6 +21,7 @@
 @synthesize barTableIdentifiers;
 @synthesize drinkTypeBar;
 @synthesize selectedIdentifier;
+@synthesize barData;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -43,7 +44,11 @@
 - (void)ctor
 {
     self.barTableData = [[NSMutableDictionary alloc] init];
-    self.barTableIdentifiers = @[@"",@"",@""];
+    self.barTableIdentifiers = @[@"Beer",@"Liquor",@"Wine"];
+    self.selectedIdentifier = self.barTableIdentifiers[0];
+    for (NSString *key in self.barTableIdentifiers) {
+        [self.barTableData setValue:[[NSMutableArray alloc] init] forKey:key];
+    }
 }
 
 - (void)viewDidLoad
@@ -51,6 +56,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self.drinkTypeBar setSelectedItem:self.drinkTypeBar.items[0]];
+    [self makeBeverageSearch];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,6 +76,35 @@
     uint selectedTab = [tabBar.items indexOfObject:item];
     self.selectedIdentifier = self.barTableIdentifiers[selectedTab];
     [self.barItemsTableView reloadData];
+    [self makeBeverageSearch];
+}
+
+- (void)makeBeverageSearch
+{
+    HSBeverageAPI *beverageSearch = [[HSBeverageAPI alloc] initWithDelegate:self];
+    beverageSearch.successCallback = @selector(searchSuccess:);
+    beverageSearch.failureCallback = @selector(searchFailure:);
+    [beverageSearch searchForBeveragesWithParameters:@{ @"drink_type" : self.selectedIdentifier, @"rows" : @"1000" }];
+}
+
+- (void)searchSuccess:(HSBeverageAPI*)request
+{
+    [self.barTableData setValue:request[request.apiResultCollectionIdentifier] forKey:self.selectedIdentifier];
+    [self.barItemsTableView reloadData];
+}
+
+- (void)searchFailure:(HSBeverageAPI*)request
+{
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.destinationViewController isKindOfClass:[HSBarItemDetailsVC class]]){
+        NSArray *data = self.barTableData[self.selectedIdentifier];
+        HSBarItemDetailsVC *details = segue.destinationViewController;
+        details.beverageData = data[self.barItemsTableView.indexPathForSelectedRow.row];
+    }
 }
 
 /********
@@ -71,12 +112,16 @@
  ********/
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    NSArray *data = self.barTableData[self.selectedIdentifier];
+    
     HSBarItemCell *cell = [tableView dequeueReusableCellWithIdentifier:@"barItemCell"];
     if (cell == nil)
     {
         cell = [[HSBarItemCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"barItemCell"];
     }
     [cell setupView];
+    [cell applyData:data[indexPath.row]];
     
     return cell;
 }
@@ -88,7 +133,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    NSArray *data = self.barTableData[self.selectedIdentifier];
+    return data.count;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

@@ -69,8 +69,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    HSBarVC *detailsVC = segue.destinationViewController;
-    detailsVC.barData = self.tableViewData[self.barTableView.indexPathForSelectedRow.row];
+    if ([segue.destinationViewController isKindOfClass:[HSBarVC class]]){
+        HSBarVC *detailsVC = segue.destinationViewController;
+        detailsVC.barData = self.tableViewData[self.barTableView.indexPathForSelectedRow.row];
+    }
 }
 
 /********

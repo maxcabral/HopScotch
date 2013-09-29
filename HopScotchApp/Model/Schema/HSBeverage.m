@@ -11,7 +11,7 @@
 @implementation HSBeverage
 - (NSString*)beverageID
 {
-    return self.internalDictionary[@"beverageID"];
+    return self.internalDictionary[@"id"];
 }
 
 - (void)setBeverageID:(NSString*)beverageID
@@ -21,7 +21,7 @@
 
 - (NSString*)barID
 {
-    return self.internalDictionary[@"barID"];
+    return self.internalDictionary[@"bar_id"];
 }
 
 - (void)setBarID:(NSString*)barID
@@ -31,7 +31,7 @@
 
 - (NSString*)drinkType
 {
-    return self.internalDictionary[@"drinkType"];
+    return self.internalDictionary[@"drink_type"];
 }
 
 - (void)setDrinkType:(NSString*)drinkType
@@ -41,7 +41,7 @@
 
 - (NSString*)drinkSubType
 {
-    return self.internalDictionary[@"drinkSubType"];
+    return self.internalDictionary[@"drink_sub_type"];
 }
 
 - (void)setDrinkSubType:(NSString*)drinkSubType
@@ -61,7 +61,7 @@
 
 - (NSString*)drinkStyle
 {
-    return self.internalDictionary[@"drinkStyle"];
+    return self.internalDictionary[@"drink_style"];
 }
 
 - (void)setDrinkStyle:(NSString*)drinkStyle
@@ -81,7 +81,7 @@
 
 - (NSString*)priceServing
 {
-    return self.internalDictionary[@"priceServing"];
+    return self.internalDictionary[@"price_serving"];
 }
 
 - (void)setPriceServing:(NSString*)priceServing
@@ -91,7 +91,7 @@
 
 - (NSString*)priceUnit
 {
-    return self.internalDictionary[@"priceUnit"];
+    return self.internalDictionary[@"price_unit"];
 }
 
 - (void)setPriceUnit:(NSString*)priceUnit
@@ -101,7 +101,7 @@
 
 - (NSString*)ABV
 {
-    return self.internalDictionary[@"ABV"];
+    return self.internalDictionary[@"abv"];
 }
 
 - (void)setABV:(NSString*)ABV
