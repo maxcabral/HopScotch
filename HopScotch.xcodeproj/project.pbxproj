@@ -72,6 +72,8 @@
 		50A314F717F7F3F000074944 /* bar-sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A314F617F7F3F000074944 /* bar-sample.jpg */; };
 		50A314F917F7F4F400074944 /* beer-sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A314F817F7F4F400074944 /* beer-sample.jpg */; };
 		50A314FC17F7FCED00074944 /* HSBarMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314FB17F7FCED00074944 /* HSBarMenuVC.m */; };
+		50A3150017F8A00C00074944 /* HSBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314FF17F8A00C00074944 /* HSBar.m */; };
+		50A3150317F8A54B00074944 /* HSBeverage.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3150217F8A54B00074944 /* HSBeverage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +179,10 @@
 		50A314FA17F7FCED00074944 /* HSBarMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBarMenuVC.h; path = HopScotchApp/Controller/HSBarMenuVC.h; sourceTree = SOURCE_ROOT; };
 		50A314FB17F7FCED00074944 /* HSBarMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBarMenuVC.m; path = HopScotchApp/Controller/HSBarMenuVC.m; sourceTree = SOURCE_ROOT; };
 		50A314FD17F7FD4600074944 /* HopScotch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HopScotch-Prefix.pch"; path = "HopScotchApp/HopScotch-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		50A314FE17F8A00C00074944 /* HSBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSBar.h; sourceTree = "<group>"; };
+		50A314FF17F8A00C00074944 /* HSBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSBar.m; sourceTree = "<group>"; };
+		50A3150117F8A54B00074944 /* HSBeverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSBeverage.h; sourceTree = "<group>"; };
+		50A3150217F8A54B00074944 /* HSBeverage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSBeverage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,6 +420,10 @@
 			children = (
 				50A314F217F7C89F00074944 /* HSDictionaryWrapper.h */,
 				50A314F317F7C89F00074944 /* HSDictionaryWrapper.m */,
+				50A314FE17F8A00C00074944 /* HSBar.h */,
+				50A314FF17F8A00C00074944 /* HSBar.m */,
+				50A3150117F8A54B00074944 /* HSBeverage.h */,
+				50A3150217F8A54B00074944 /* HSBeverage.m */,
 			);
 			name = Schema;
 			path = HopScotchApp/Model/Schema;
@@ -557,6 +567,7 @@
 				50A314C317F7594200074944 /* mcabStack.m in Sources */,
 				50A314E417F77A7000074944 /* HSBarItemCell.m in Sources */,
 				50A314D217F75BD900074944 /* HSBaseVC.m in Sources */,
+				50A3150317F8A54B00074944 /* HSBeverage.m in Sources */,
 				50A314FC17F7FCED00074944 /* HSBarMenuVC.m in Sources */,
 				50A314C717F7594200074944 /* NSString+WebStrings.m in Sources */,
 				50A314C217F7594200074944 /* MBProgressHUD.m in Sources */,
@@ -574,6 +585,7 @@
 				50A314C617F7594200074944 /* NSString+Utility.m in Sources */,
 				50A314E117F7794A00074944 /* HSBarVC.m in Sources */,
 				50A314C417F7594200074944 /* MCObservableMutableDictionary.m in Sources */,
+				50A3150017F8A00C00074944 /* HSBar.m in Sources */,
 				50A314EA17F7884000074944 /* HSBarItemDetailsVC.m in Sources */,
 				50A314CA17F7594200074944 /* UIViewController+GestureRecognizerMethods.m in Sources */,
 			);
