@@ -52,39 +52,41 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu Item Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRK-4o-wWw">
-                                                    <rect key="frame" x="20" y="9" width="245" height="21"/>
+                                                    <rect key="frame" x="20" y="9" width="267" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="f3u-Fn-kDS"/>
+                                                        <constraint firstAttribute="height" constant="21" id="6z0-LI-OrC"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap/Bottle/Descriptor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkN-kv-dVG">
-                                                    <rect key="frame" x="20" y="35" width="245" height="21"/>
+                                                    <rect key="frame" x="20" y="32" width="267" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liked Where/When" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVY-rc-gTW">
-                                                    <rect key="frame" x="20" y="53" width="245" height="21"/>
+                                                    <rect key="frame" x="20" y="49" width="267" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="lVY-rc-gTW" firstAttribute="trailing" secondItem="wkN-kv-dVG" secondAttribute="trailing" id="0MP-Lc-1fj"/>
-                                                <constraint firstItem="GRK-4o-wWw" firstAttribute="trailing" secondItem="wkN-kv-dVG" secondAttribute="trailing" id="50p-1W-Lxb"/>
-                                                <constraint firstItem="lVY-rc-gTW" firstAttribute="leading" secondItem="wkN-kv-dVG" secondAttribute="leading" id="8Uk-7m-HDo"/>
-                                                <constraint firstItem="lVY-rc-gTW" firstAttribute="top" secondItem="GRK-4o-wWw" secondAttribute="bottom" constant="23" id="NNA-QI-FFB"/>
-                                                <constraint firstAttribute="bottom" secondItem="wkN-kv-dVG" secondAttribute="bottom" constant="23" id="QeW-If-reQ"/>
-                                                <constraint firstAttribute="trailing" secondItem="GRK-4o-wWw" secondAttribute="trailing" constant="22" id="XyU-Js-JfR"/>
-                                                <constraint firstItem="GRK-4o-wWw" firstAttribute="leading" secondItem="wkN-kv-dVG" secondAttribute="leading" id="cFP-gS-VoC"/>
-                                                <constraint firstItem="GRK-4o-wWw" firstAttribute="leading" secondItem="SJX-5G-LoL" secondAttribute="leading" constant="20" symbolic="YES" id="fdC-0E-zHi"/>
-                                                <constraint firstItem="wkN-kv-dVG" firstAttribute="top" secondItem="GRK-4o-wWw" secondAttribute="bottom" constant="5" id="ftN-uT-DAr"/>
-                                                <constraint firstAttribute="bottom" secondItem="lVY-rc-gTW" secondAttribute="bottom" constant="5" id="jBb-e4-IdS"/>
-                                                <constraint firstItem="GRK-4o-wWw" firstAttribute="top" secondItem="SJX-5G-LoL" secondAttribute="top" constant="9" id="jIB-MI-7h7"/>
+                                                <constraint firstItem="GRK-4o-wWw" firstAttribute="top" secondItem="SJX-5G-LoL" secondAttribute="top" constant="9" id="0yv-dj-xI6"/>
+                                                <constraint firstItem="lVY-rc-gTW" firstAttribute="leading" secondItem="wkN-kv-dVG" secondAttribute="leading" id="26K-xt-8cW"/>
+                                                <constraint firstAttribute="bottom" secondItem="wkN-kv-dVG" secondAttribute="bottom" constant="26" id="A71-wP-XOt"/>
+                                                <constraint firstAttribute="bottom" secondItem="lVY-rc-gTW" secondAttribute="bottom" constant="9" id="A9Z-Xe-Wv8"/>
+                                                <constraint firstItem="wkN-kv-dVG" firstAttribute="trailing" secondItem="lVY-rc-gTW" secondAttribute="trailing" id="AUo-JJ-ZPq"/>
+                                                <constraint firstItem="GRK-4o-wWw" firstAttribute="leading" secondItem="SJX-5G-LoL" secondAttribute="leading" constant="20" symbolic="YES" id="Z7q-99-Ven"/>
+                                                <constraint firstAttribute="trailing" secondItem="wkN-kv-dVG" secondAttribute="trailing" id="cUC-Ds-Uhg"/>
+                                                <constraint firstItem="wkN-kv-dVG" firstAttribute="top" secondItem="GRK-4o-wWw" secondAttribute="bottom" constant="2" id="d8L-bO-hp0"/>
+                                                <constraint firstItem="GRK-4o-wWw" firstAttribute="leading" secondItem="wkN-kv-dVG" secondAttribute="leading" id="pPM-NK-PYF"/>
+                                                <constraint firstItem="lVY-rc-gTW" firstAttribute="top" secondItem="GRK-4o-wWw" secondAttribute="bottom" constant="19" id="uK2-mB-yCH"/>
+                                                <constraint firstItem="wkN-kv-dVG" firstAttribute="trailing" secondItem="GRK-4o-wWw" secondAttribute="trailing" id="wLt-46-QNL"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
