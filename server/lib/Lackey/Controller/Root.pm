@@ -78,17 +78,48 @@ sub index_POST :Private {
       { name => 'email', datatype => 'text' },
       { name => 'password', datatype => 'text', },
     ],
+    beverage => [
+      { name => 'bar_id', datatype => 'int', not_null => 1 },
+      { name => 'drink_type', datatype =>'text', not_null => 1 },
+      { name => 'drink_sub_type', datatype =>'text', not_null => 0 },
+      { name => 'name', datatype =>'text', not_null => 1 },
+      { name => 'drink_style', datatype =>'text', not_null => 1 },
+      { name => 'ingredients', datatype =>'text', not_null => 1 },
+      { name => 'price_serving', datatype =>'text', not_null => 1 },
+      { name => 'price_unit', datatype =>'text', not_null => 1 },
+      { name => 'abv', datatype =>'text', not_null => 1 },
+    ],
+    food => [
+      { name => 'bar_id', datatype => 'int', not_null => 1 },
+      { name => 'food_type', datatype =>'text', not_null => 1 },
+      { name => 'food_sub_type', datatype =>'text', not_null => 0 },
+      { name => 'name', datatype =>'text', not_null => 1 },
+      { name => 'food_style', datatype =>'text', not_null => 0 },
+      { name => 'ingredients', datatype =>'text', not_null => 1 },
+      { name => 'price_serving', datatype =>'text', not_null => 1 },
+      { name => 'price_unit', datatype =>'text', not_null => 1 },
+    ],
+    bar => [
+      { name => 'name', datatype =>'text', not_null => 1, },
+      { name => 'location', datatype =>'text', not_null => 1, },
+      { name => 'hours', datatype =>'text', not_null => 1, },
+      { name => 'happy_hour', datatype =>'text', not_null => 1, },
+    ],
+    checkin => [
+      { name => 'bar_id', datatype =>'int', not_null => 1, },
+      { name => 'user_id', datatype =>'int', not_null => 1, },
+    ],
   };
 
   my $db_creator = Lackey::Util::Database->new(
     tables => $example,
-    database => 'test',
+    database => 'hopster',
   );
   
   try {
     $db_creator->build_database();
     $db_creator->load_database();
-    $c->model("DB::Project")->create({ name => 'test', description => 'Created DB' })
+    $c->model("DB::Project")->create({ name => 'hopster', description => 'Hopster DB' })
   } catch {
     warn "$_";
   };

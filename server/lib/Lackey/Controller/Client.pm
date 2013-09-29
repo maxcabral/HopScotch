@@ -257,7 +257,7 @@ sub process_id {
 sub process_search {
   my ($self, $c) = @_;
   my $rows = $c->stash->{rows} || 10;
-  my $page = $c->stash->{rows} || 1;
+  my $page = $c->stash->{page} || 1;
   my $schema = $c->stash->{schema};
   my $params = $c->stash->{params};
 

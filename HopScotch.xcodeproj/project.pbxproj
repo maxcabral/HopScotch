@@ -43,6 +43,8 @@
 		50A314E417F77A7000074944 /* HSBarItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314E317F77A7000074944 /* HSBarItemCell.m */; };
 		50A314E717F77B7900074944 /* HSBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314E617F77B7900074944 /* HSBaseCell.m */; };
 		50A314EA17F7884000074944 /* HSBarItemDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314E917F7884000074944 /* HSBarItemDetailsVC.m */; };
+		50A314F017F7C89800074944 /* HSAPIBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314EF17F7C89800074944 /* HSAPIBase.m */; };
+		50A314F417F7C89F00074944 /* HSDictionaryWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314F317F7C89F00074944 /* HSDictionaryWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,10 @@
 		50A314E617F77B7900074944 /* HSBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBaseCell.m; path = HopScotchApp/View/UITableViewCells/HSBaseCell.m; sourceTree = SOURCE_ROOT; };
 		50A314E817F7884000074944 /* HSBarItemDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBarItemDetailsVC.h; path = HopScotchApp/Controller/HSBarItemDetailsVC.h; sourceTree = SOURCE_ROOT; };
 		50A314E917F7884000074944 /* HSBarItemDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBarItemDetailsVC.m; path = HopScotchApp/Controller/HSBarItemDetailsVC.m; sourceTree = SOURCE_ROOT; };
+		50A314EE17F7C89800074944 /* HSAPIBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSAPIBase.h; path = HopScotchApp/Model/API/HSAPIBase.h; sourceTree = SOURCE_ROOT; };
+		50A314EF17F7C89800074944 /* HSAPIBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSAPIBase.m; path = HopScotchApp/Model/API/HSAPIBase.m; sourceTree = SOURCE_ROOT; };
+		50A314F217F7C89F00074944 /* HSDictionaryWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDictionaryWrapper.h; sourceTree = "<group>"; };
+		50A314F317F7C89F00074944 /* HSDictionaryWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDictionaryWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +255,8 @@
 		5076CC7817F7526300845CEA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				50A314F517F7C8A400074944 /* API */,
+				50A314F117F7C89F00074944 /* Schema */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -306,6 +314,25 @@
 				50A314E617F77B7900074944 /* HSBaseCell.m */,
 			);
 			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		50A314F117F7C89F00074944 /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				50A314F217F7C89F00074944 /* HSDictionaryWrapper.h */,
+				50A314F317F7C89F00074944 /* HSDictionaryWrapper.m */,
+			);
+			name = Schema;
+			path = HopScotchApp/Model/Schema;
+			sourceTree = SOURCE_ROOT;
+		};
+		50A314F517F7C8A400074944 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				50A314EE17F7C89800074944 /* HSAPIBase.h */,
+				50A314EF17F7C89800074944 /* HSAPIBase.m */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +433,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50A314F017F7C89800074944 /* HSAPIBase.m in Sources */,
+				50A314F417F7C89F00074944 /* HSDictionaryWrapper.m in Sources */,
 				50A314C317F7594200074944 /* mcabStack.m in Sources */,
 				50A314E417F77A7000074944 /* HSBarItemCell.m in Sources */,
 				50A314D217F75BD900074944 /* HSBaseVC.m in Sources */,
