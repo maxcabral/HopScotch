@@ -41,6 +41,8 @@
 		2523D39117F7CD950063B813 /* liquor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2523D38B17F7CD950063B813 /* liquor@2x.png */; };
 		2523D39217F7CD950063B813 /* wine.png in Resources */ = {isa = PBXBuildFile; fileRef = 2523D38C17F7CD950063B813 /* wine.png */; };
 		2523D39317F7CD950063B813 /* wine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2523D38D17F7CD950063B813 /* wine@2x.png */; };
+		25EE918517F8B8D20020F9F0 /* beer-sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EE918317F8B8D20020F9F0 /* beer-sample.png */; };
+		25EE918617F8B8D20020F9F0 /* beer-sample@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EE918417F8B8D20020F9F0 /* beer-sample@2x.png */; };
 		5076CC4417F7525700845CEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076CC4317F7525700845CEA /* Foundation.framework */; };
 		5076CC4617F7525700845CEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076CC4517F7525700845CEA /* CoreGraphics.framework */; };
 		5076CC4817F7525700845CEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076CC4717F7525700845CEA /* UIKit.framework */; };
@@ -132,6 +134,8 @@
 		2523D38B17F7CD950063B813 /* liquor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "liquor@2x.png"; path = "HopScotchApp/Assets/liquor@2x.png"; sourceTree = SOURCE_ROOT; };
 		2523D38C17F7CD950063B813 /* wine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wine.png; path = HopScotchApp/Assets/wine.png; sourceTree = SOURCE_ROOT; };
 		2523D38D17F7CD950063B813 /* wine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wine@2x.png"; path = "HopScotchApp/Assets/wine@2x.png"; sourceTree = SOURCE_ROOT; };
+		25EE918317F8B8D20020F9F0 /* beer-sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beer-sample.png"; path = "HopScotchApp/Assets/beer-sample.png"; sourceTree = SOURCE_ROOT; };
+		25EE918417F8B8D20020F9F0 /* beer-sample@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beer-sample@2x.png"; path = "HopScotchApp/Assets/beer-sample@2x.png"; sourceTree = SOURCE_ROOT; };
 		5076CC4017F7525700845CEA /* HopScotch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopScotch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5076CC4317F7525700845CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5076CC4517F7525700845CEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -242,6 +246,8 @@
 				50A314F817F7F4F400074944 /* beer-sample.jpg */,
 				50A314F617F7F3F000074944 /* bar-sample.jpg */,
 				2523D36F17F7A7F30063B813 /* like.png */,
+				25EE918317F8B8D20020F9F0 /* beer-sample.png */,
+				25EE918417F8B8D20020F9F0 /* beer-sample@2x.png */,
 				2523D37017F7A7F30063B813 /* like@2x.png */,
 				250452AF17F78ABD008E379A /* checkin-tab-selected.png */,
 				2520AB7217F8B48D0012C0B2 /* bar-sample.png */,
@@ -559,6 +565,7 @@
 				250452C717F78ABD008E379A /* food-selected.png in Resources */,
 				250452C417F78ABD008E379A /* drinks-tab-selected@2x.png in Resources */,
 				250452C217F78ABD008E379A /* checkin-tab@2x.png in Resources */,
+				25EE918617F8B8D20020F9F0 /* beer-sample@2x.png in Resources */,
 				2520AB6B17F8A8B50012C0B2 /* clock.png in Resources */,
 				250452CA17F78ABD008E379A /* food@2x.png in Resources */,
 				250452C017F78ABD008E379A /* checkin-tab-selected@2x.png in Resources */,
@@ -589,6 +596,7 @@
 				2523D38E17F7CD950063B813 /* beer.png in Resources */,
 				2520AB6F17F8A8B50012C0B2 /* happy@2x.png in Resources */,
 				2520AB7117F8A8DE0012C0B2 /* happy.png in Resources */,
+				25EE918517F8B8D20020F9F0 /* beer-sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
