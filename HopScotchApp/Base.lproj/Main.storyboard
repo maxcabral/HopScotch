@@ -268,6 +268,7 @@
                         <outlet property="barItemDescriptionTextView" destination="4Eu-91-yH3" id="f1b-4Y-fMj"/>
                         <outlet property="barItemImage" destination="lt0-bq-b0Z" id="BEM-4l-xha"/>
                         <outlet property="barItemInfoLabel" destination="K0F-qP-KGh" id="tBs-6t-Vhr"/>
+                        <outlet property="barItemNameLabel" destination="ykL-YP-KSg" id="oQa-Wc-RkR"/>
                         <outlet property="barItemTypeLabel" destination="eg1-uY-rpI" id="tPI-5Q-as2"/>
                         <outlet property="checkinButton" destination="0Od-2q-bz1" id="s4i-IU-qsR"/>
                     </connections>
