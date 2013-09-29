@@ -23,6 +23,14 @@
 		250452CC17F78ABD008E379A /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 250452BC17F78ABD008E379A /* location@2x.png */; };
 		250452CD17F78ABD008E379A /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 250452BD17F78ABD008E379A /* search.png */; };
 		250452CE17F78ABD008E379A /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 250452BE17F78ABD008E379A /* search@2x.png */; };
+		2520AB6917F8A8B50012C0B2 /* clock-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB6217F8A8B50012C0B2 /* clock-red.png */; };
+		2520AB6A17F8A8B50012C0B2 /* clock-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB6317F8A8B50012C0B2 /* clock-red@2x.png */; };
+		2520AB6B17F8A8B50012C0B2 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB6417F8A8B50012C0B2 /* clock.png */; };
+		2520AB6C17F8A8B50012C0B2 /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB6517F8A8B50012C0B2 /* clock@2x.png */; };
+		2520AB6D17F8A8B50012C0B2 /* happy-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB6617F8A8B50012C0B2 /* happy-red.png */; };
+		2520AB6E17F8A8B50012C0B2 /* happy-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB6717F8A8B50012C0B2 /* happy-red@2x.png */; };
+		2520AB6F17F8A8B50012C0B2 /* happy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB6817F8A8B50012C0B2 /* happy@2x.png */; };
+		2520AB7117F8A8DE0012C0B2 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB7017F8A8DE0012C0B2 /* happy.png */; };
 		2523D37117F7A7F30063B813 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 2523D36F17F7A7F30063B813 /* like.png */; };
 		2523D37217F7A7F30063B813 /* like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2523D37017F7A7F30063B813 /* like@2x.png */; };
 		2523D38E17F7CD950063B813 /* beer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2523D38817F7CD950063B813 /* beer.png */; };
@@ -101,6 +109,14 @@
 		250452BC17F78ABD008E379A /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "location@2x.png"; path = "HopScotchApp/Assets/location@2x.png"; sourceTree = SOURCE_ROOT; };
 		250452BD17F78ABD008E379A /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = search.png; path = HopScotchApp/Assets/search.png; sourceTree = SOURCE_ROOT; };
 		250452BE17F78ABD008E379A /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "search@2x.png"; path = "HopScotchApp/Assets/search@2x.png"; sourceTree = SOURCE_ROOT; };
+		2520AB6217F8A8B50012C0B2 /* clock-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clock-red.png"; path = "HopScotchApp/Assets/clock-red.png"; sourceTree = SOURCE_ROOT; };
+		2520AB6317F8A8B50012C0B2 /* clock-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clock-red@2x.png"; path = "HopScotchApp/Assets/clock-red@2x.png"; sourceTree = SOURCE_ROOT; };
+		2520AB6417F8A8B50012C0B2 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clock.png; path = HopScotchApp/Assets/clock.png; sourceTree = SOURCE_ROOT; };
+		2520AB6517F8A8B50012C0B2 /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clock@2x.png"; path = "HopScotchApp/Assets/clock@2x.png"; sourceTree = SOURCE_ROOT; };
+		2520AB6617F8A8B50012C0B2 /* happy-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "happy-red.png"; path = "HopScotchApp/Assets/happy-red.png"; sourceTree = SOURCE_ROOT; };
+		2520AB6717F8A8B50012C0B2 /* happy-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "happy-red@2x.png"; path = "HopScotchApp/Assets/happy-red@2x.png"; sourceTree = SOURCE_ROOT; };
+		2520AB6817F8A8B50012C0B2 /* happy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "happy@2x.png"; path = "HopScotchApp/Assets/happy@2x.png"; sourceTree = SOURCE_ROOT; };
+		2520AB7017F8A8DE0012C0B2 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy.png; path = HopScotchApp/Assets/happy.png; sourceTree = SOURCE_ROOT; };
 		2523D36F17F7A7F30063B813 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = like.png; path = HopScotchApp/Assets/like.png; sourceTree = SOURCE_ROOT; };
 		2523D37017F7A7F30063B813 /* like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "like@2x.png"; path = "HopScotchApp/Assets/like@2x.png"; sourceTree = SOURCE_ROOT; };
 		2523D38817F7CD950063B813 /* beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beer.png; path = HopScotchApp/Assets/beer.png; sourceTree = SOURCE_ROOT; };
@@ -216,6 +232,14 @@
 				2523D37017F7A7F30063B813 /* like@2x.png */,
 				250452AF17F78ABD008E379A /* checkin-tab-selected.png */,
 				2523D38817F7CD950063B813 /* beer.png */,
+				2520AB6217F8A8B50012C0B2 /* clock-red.png */,
+				2520AB6317F8A8B50012C0B2 /* clock-red@2x.png */,
+				2520AB7017F8A8DE0012C0B2 /* happy.png */,
+				2520AB6417F8A8B50012C0B2 /* clock.png */,
+				2520AB6517F8A8B50012C0B2 /* clock@2x.png */,
+				2520AB6617F8A8B50012C0B2 /* happy-red.png */,
+				2520AB6717F8A8B50012C0B2 /* happy-red@2x.png */,
+				2520AB6817F8A8B50012C0B2 /* happy@2x.png */,
 				2523D38917F7CD950063B813 /* beer@2x.png */,
 				2523D38A17F7CD950063B813 /* liquor.png */,
 				2523D38B17F7CD950063B813 /* liquor@2x.png */,
@@ -513,20 +537,26 @@
 				250452C717F78ABD008E379A /* food-selected.png in Resources */,
 				250452C417F78ABD008E379A /* drinks-tab-selected@2x.png in Resources */,
 				250452C217F78ABD008E379A /* checkin-tab@2x.png in Resources */,
+				2520AB6B17F8A8B50012C0B2 /* clock.png in Resources */,
 				250452CA17F78ABD008E379A /* food@2x.png in Resources */,
 				250452C017F78ABD008E379A /* checkin-tab-selected@2x.png in Resources */,
 				50A314F717F7F3F000074944 /* bar-sample.jpg in Resources */,
 				2523D39117F7CD950063B813 /* liquor@2x.png in Resources */,
 				2523D39017F7CD950063B813 /* liquor.png in Resources */,
 				250452BF17F78ABD008E379A /* checkin-tab-selected.png in Resources */,
+				2520AB6917F8A8B50012C0B2 /* clock-red.png in Resources */,
+				2520AB6D17F8A8B50012C0B2 /* happy-red.png in Resources */,
 				250452CB17F78ABD008E379A /* location.png in Resources */,
 				250452CE17F78ABD008E379A /* search@2x.png in Resources */,
 				2523D39217F7CD950063B813 /* wine.png in Resources */,
 				50A314A417F7585000074944 /* InfoPlist.strings in Resources */,
 				250452CC17F78ABD008E379A /* location@2x.png in Resources */,
+				2520AB6C17F8A8B50012C0B2 /* clock@2x.png in Resources */,
 				250452C117F78ABD008E379A /* checkin-tab.png in Resources */,
 				250452C617F78ABD008E379A /* drinks-tab@2x.png in Resources */,
 				250452C817F78ABD008E379A /* food-selected@2x.png in Resources */,
+				2520AB6E17F8A8B50012C0B2 /* happy-red@2x.png in Resources */,
+				2520AB6A17F8A8B50012C0B2 /* clock-red@2x.png in Resources */,
 				2523D37117F7A7F30063B813 /* like.png in Resources */,
 				250452C917F78ABD008E379A /* food.png in Resources */,
 				2523D37217F7A7F30063B813 /* like@2x.png in Resources */,
@@ -534,6 +564,8 @@
 				250452C317F78ABD008E379A /* drinks-tab-selected.png in Resources */,
 				2523D39317F7CD950063B813 /* wine@2x.png in Resources */,
 				2523D38E17F7CD950063B813 /* beer.png in Resources */,
+				2520AB6F17F8A8B50012C0B2 /* happy@2x.png in Resources */,
+				2520AB7117F8A8DE0012C0B2 /* happy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
