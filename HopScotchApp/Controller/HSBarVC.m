@@ -28,11 +28,14 @@
 @synthesize barHoursDescriptionLabel;
 @synthesize checkInButton;
 @synthesize menuItemsButton;
-
+@synthesize barData;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.barHoursLabel.text = self.barData.hours;
+    self.barHappyHourLabel.text = self.barData.happyHour;
+    self.barNameLable.text = self.barData.name;
 }
 
 - (void)didReceiveMemoryWarning

@@ -30,4 +30,10 @@
 {
     
 }
+
+- (void)applyData:(id)data
+{
+    
+}
+
 @end
