@@ -93,23 +93,19 @@
     [self->queue cancelAllOperations];
 }
 
-- (void)makeRequestWithMethod:(enum K_HTTPMethods)method target:(id)target successCallback:(SEL)success failureCallback:(SEL)failure andData:(NSDictionary*)sentParameters;
+- (void)makeRequestWithMethod:(enum K_HTTPMethods)method url:(NSString*)url target:(id)target successCallback:(SEL)success failureCallback:(SEL)failure andData:(NSDictionary*)sentParameters;
 {
-#ifdef K_LDI_API_DEBUG_MODE
-    NSString *reqUri = @"http://wksystems.net/epres/api/index";
-#else
-    NSString *reqUri = @"http://epres.ldirx.com/api/index";
-#endif
-    
     NSMutableDictionary *parameters = [sentParameters mutableCopy];
-    [parameters setObject:@"json" forKey:@"returntype"];
+    NSString *reqUrl;
     
     if (method == K_HTTP_GET || method == K_HTTP_DELETE){
-        reqUri = [NSString stringWithFormat:@"%@?%@",reqUri,[parameters queryString]];
+        reqUrl = [NSString stringWithFormat:@"%@?%@",url,[parameters queryString]];
+    } else {
+        reqUrl = url;
     }
     
     //AsynchronousRequest to grab the data
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:reqUri]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:reqUrl]];
     [request setTimeoutInterval:self->timeoutInterval];
     [request setHTTPMethod:[self httpMethodEnumToString:method]];
     

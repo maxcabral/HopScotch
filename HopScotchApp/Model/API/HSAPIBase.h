@@ -33,7 +33,7 @@ enum K_HTTPMethods {
 
 - (id)initWithDelegate:(id)delegate;
 - (void)cancelRequests;
-- (void)makeRequestWithMethod:(enum K_HTTPMethods)method target:(id)target successCallback:(SEL)successCallback failureCallback:(SEL)failureCallback andData:(NSDictionary*)parameters;
+- (void)makeRequestWithMethod:(enum K_HTTPMethods)method url:(NSString*)url target:(id)target successCallback:(SEL)successCallback failureCallback:(SEL)failureCallback andData:(NSDictionary*)parameters;
 - (NSString*)getFriendlyResponseError;
 
 - (void)deserializeCollectionOfRecords:(HSAPIBase*)request;
