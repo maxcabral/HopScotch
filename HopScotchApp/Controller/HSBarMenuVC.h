@@ -1,5 +1,5 @@
 //
-//  HSBarVC.h
+//  HSBarMenuVC.h
 //  HopScotch
 //
 //  Created by Maxwell Cabral on 9/28/13.
@@ -8,6 +8,6 @@
 
 #import "HSBaseVC.h"
 
-@interface HSBarVC : HSBaseVC
+@interface HSBarMenuVC : HSBaseVC <UITableViewDelegate, UITableViewDataSource, UITabBarDelegate>
 
 @end

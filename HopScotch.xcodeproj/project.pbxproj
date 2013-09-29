@@ -71,6 +71,7 @@
 		50A314F417F7C89F00074944 /* HSDictionaryWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314F317F7C89F00074944 /* HSDictionaryWrapper.m */; };
 		50A314F717F7F3F000074944 /* bar-sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A314F617F7F3F000074944 /* bar-sample.jpg */; };
 		50A314F917F7F4F400074944 /* beer-sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50A314F817F7F4F400074944 /* beer-sample.jpg */; };
+		50A314FC17F7FCED00074944 /* HSBarMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A314FB17F7FCED00074944 /* HSBarMenuVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +174,9 @@
 		50A314F317F7C89F00074944 /* HSDictionaryWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDictionaryWrapper.m; sourceTree = "<group>"; };
 		50A314F617F7F3F000074944 /* bar-sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "bar-sample.jpg"; path = "HopScotchApp/Assets/bar-sample.jpg"; sourceTree = SOURCE_ROOT; };
 		50A314F817F7F4F400074944 /* beer-sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "beer-sample.jpg"; path = "HopScotchApp/Assets/beer-sample.jpg"; sourceTree = SOURCE_ROOT; };
+		50A314FA17F7FCED00074944 /* HSBarMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSBarMenuVC.h; path = HopScotchApp/Controller/HSBarMenuVC.h; sourceTree = SOURCE_ROOT; };
+		50A314FB17F7FCED00074944 /* HSBarMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSBarMenuVC.m; path = HopScotchApp/Controller/HSBarMenuVC.m; sourceTree = SOURCE_ROOT; };
+		50A314FD17F7FD4600074944 /* HopScotch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HopScotch-Prefix.pch"; path = "HopScotchApp/HopScotch-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +280,7 @@
 				250452AE17F78AB3008E379A /* Assets */,
 				50A3149617F7585000074944 /* en.lproj */,
 				50A3149917F7585000074944 /* HopScotch-Info.plist */,
+				50A314FD17F7FD4600074944 /* HopScotch-Prefix.pch */,
 				50A3149B17F7585000074944 /* HSAppDelegate.h */,
 				50A3149C17F7585000074944 /* HSAppDelegate.m */,
 				50A3149D17F7585000074944 /* HSApplication.h */,
@@ -359,6 +364,8 @@
 		5076CC7A17F7528200845CEA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				50A314FA17F7FCED00074944 /* HSBarMenuVC.h */,
+				50A314FB17F7FCED00074944 /* HSBarMenuVC.m */,
 				50A314CD17F75A7E00074944 /* HSMainVC.h */,
 				50A314CE17F75A7E00074944 /* HSMainVC.m */,
 				50A314D017F75BD900074944 /* HSBaseVC.h */,
@@ -550,6 +557,7 @@
 				50A314C317F7594200074944 /* mcabStack.m in Sources */,
 				50A314E417F77A7000074944 /* HSBarItemCell.m in Sources */,
 				50A314D217F75BD900074944 /* HSBaseVC.m in Sources */,
+				50A314FC17F7FCED00074944 /* HSBarMenuVC.m in Sources */,
 				50A314C717F7594200074944 /* NSString+WebStrings.m in Sources */,
 				50A314C217F7594200074944 /* MBProgressHUD.m in Sources */,
 				50A314C817F7594200074944 /* UIButton+TextManipulationMethods.m in Sources */,
