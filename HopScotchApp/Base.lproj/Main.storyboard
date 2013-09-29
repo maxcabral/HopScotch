@@ -594,20 +594,15 @@
         <image name="beer-sample.jpg" width="320" height="160"/>
         <image name="beer.png" width="30" height="30"/>
         <image name="checkin-tab-selected.png" width="30" height="30"/>
-        <image name="checkin-tab-selected.png" width="30" height="30"/>
         <image name="checkin-tab.png" width="30" height="30"/>
         <image name="clock-red.png" width="60" height="60"/>
         <image name="drinks-tab-selected.png" width="30" height="30"/>
-        <image name="drinks-tab-selected.png" width="30" height="30"/>
-        <image name="drinks-tab.png" width="30" height="30"/>
-        <image name="drinks-tab.png" width="30" height="30"/>
         <image name="drinks-tab.png" width="30" height="30"/>
         <image name="happy-red.png" width="60" height="60"/>
         <image name="like.png" width="68" height="68"/>
         <image name="liquor.png" width="30" height="30"/>
         <image name="location.png" width="68" height="68"/>
         <image name="search.png" width="20" height="20"/>
-        <image name="wine.png" width="30" height="30"/>
         <image name="wine.png" width="30" height="30"/>
     </resources>
     <color key="tintColor" red="1" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>

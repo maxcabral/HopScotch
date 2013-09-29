@@ -11,4 +11,5 @@
 @interface HSBaseCell : UITableViewCell
 @property (weak) id<UITableViewDelegate,UITableViewDataSource> tableViewController;
 - (void)setupView;
+- (void)applyData:(id)data;
 @end

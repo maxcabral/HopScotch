@@ -58,11 +58,19 @@
 - (void)barSearchSuccess:(HSBarAPI*)request
 {
     self.tableViewData = request[request.apiResultCollectionIdentifier];
+    [self.barTableView reloadData];
 }
 
 - (void)barSearchFailure:(HSBarAPI*)request
 {
     
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    HSBarVC *detailsVC = segue.destinationViewController;
+    detailsVC.barData = self.tableViewData[self.barTableView.indexPathForSelectedRow.row];
 }
 
 /********
@@ -76,6 +84,7 @@
         cell = [[HSBarCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"barCell"];
     }
     [cell setupView];
+    [cell applyData:self.tableViewData[indexPath.row]];
     
     return cell;
 }

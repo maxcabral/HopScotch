@@ -37,4 +37,9 @@
     
 }
 
+- (void)applyData:(HSBar*)data
+{
+    self.barNameLabel.text = data.name;
+}
+
 @end

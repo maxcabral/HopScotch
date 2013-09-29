@@ -31,6 +31,7 @@
     #import "HSMainVC.h"
     #import "HSBarVC.h"
     #import "HSBarMenuVC.h"
+    #import "HSBarMenuVC.h"
 
     #import "KeychainWrapper.h"
     #import "MBProgressHUD.h"

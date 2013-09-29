@@ -9,5 +9,5 @@
 #import "HSBaseVC.h"
 
 @interface HSBarVC : HSBaseVC
-
+@property (strong) HSBar *barData;
 @end
