@@ -31,6 +31,8 @@
 		2520AB6E17F8A8B50012C0B2 /* happy-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB6717F8A8B50012C0B2 /* happy-red@2x.png */; };
 		2520AB6F17F8A8B50012C0B2 /* happy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB6817F8A8B50012C0B2 /* happy@2x.png */; };
 		2520AB7117F8A8DE0012C0B2 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB7017F8A8DE0012C0B2 /* happy.png */; };
+		2520AB7417F8B48D0012C0B2 /* bar-sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB7217F8B48D0012C0B2 /* bar-sample.png */; };
+		2520AB7517F8B48D0012C0B2 /* bar-sample@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2520AB7317F8B48D0012C0B2 /* bar-sample@2x.png */; };
 		2523D37117F7A7F30063B813 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 2523D36F17F7A7F30063B813 /* like.png */; };
 		2523D37217F7A7F30063B813 /* like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2523D37017F7A7F30063B813 /* like@2x.png */; };
 		2523D38E17F7CD950063B813 /* beer.png in Resources */ = {isa = PBXBuildFile; fileRef = 2523D38817F7CD950063B813 /* beer.png */; };
@@ -120,6 +122,8 @@
 		2520AB6717F8A8B50012C0B2 /* happy-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "happy-red@2x.png"; path = "HopScotchApp/Assets/happy-red@2x.png"; sourceTree = SOURCE_ROOT; };
 		2520AB6817F8A8B50012C0B2 /* happy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "happy@2x.png"; path = "HopScotchApp/Assets/happy@2x.png"; sourceTree = SOURCE_ROOT; };
 		2520AB7017F8A8DE0012C0B2 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy.png; path = HopScotchApp/Assets/happy.png; sourceTree = SOURCE_ROOT; };
+		2520AB7217F8B48D0012C0B2 /* bar-sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar-sample.png"; path = "HopScotchApp/Assets/bar-sample.png"; sourceTree = SOURCE_ROOT; };
+		2520AB7317F8B48D0012C0B2 /* bar-sample@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bar-sample@2x.png"; path = "HopScotchApp/Assets/bar-sample@2x.png"; sourceTree = SOURCE_ROOT; };
 		2523D36F17F7A7F30063B813 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = like.png; path = HopScotchApp/Assets/like.png; sourceTree = SOURCE_ROOT; };
 		2523D37017F7A7F30063B813 /* like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "like@2x.png"; path = "HopScotchApp/Assets/like@2x.png"; sourceTree = SOURCE_ROOT; };
 		2523D38817F7CD950063B813 /* beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beer.png; path = HopScotchApp/Assets/beer.png; sourceTree = SOURCE_ROOT; };
@@ -240,6 +244,8 @@
 				2523D36F17F7A7F30063B813 /* like.png */,
 				2523D37017F7A7F30063B813 /* like@2x.png */,
 				250452AF17F78ABD008E379A /* checkin-tab-selected.png */,
+				2520AB7217F8B48D0012C0B2 /* bar-sample.png */,
+				2520AB7317F8B48D0012C0B2 /* bar-sample@2x.png */,
 				2523D38817F7CD950063B813 /* beer.png */,
 				2520AB6217F8A8B50012C0B2 /* clock-red.png */,
 				2520AB6317F8A8B50012C0B2 /* clock-red@2x.png */,
@@ -545,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2523D38F17F7CD950063B813 /* beer@2x.png in Resources */,
+				2520AB7517F8B48D0012C0B2 /* bar-sample@2x.png in Resources */,
 				50A314CC17F7597600074944 /* Main.storyboard in Resources */,
 				250452CD17F78ABD008E379A /* search.png in Resources */,
 				50A314F917F7F4F400074944 /* beer-sample.jpg in Resources */,
@@ -555,6 +562,7 @@
 				2520AB6B17F8A8B50012C0B2 /* clock.png in Resources */,
 				250452CA17F78ABD008E379A /* food@2x.png in Resources */,
 				250452C017F78ABD008E379A /* checkin-tab-selected@2x.png in Resources */,
+				2520AB7417F8B48D0012C0B2 /* bar-sample.png in Resources */,
 				50A314F717F7F3F000074944 /* bar-sample.jpg in Resources */,
 				2523D39117F7CD950063B813 /* liquor@2x.png in Resources */,
 				2523D39017F7CD950063B813 /* liquor.png in Resources */,
