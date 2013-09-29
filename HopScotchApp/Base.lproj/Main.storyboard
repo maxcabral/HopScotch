@@ -576,6 +576,8 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="5S2-f2-hjO"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="barHappyHourDescriptionLabel" destination="NKQ-xC-CrD" id="PFF-89-ZZc"/>
+                        <outlet property="barHappyHourLabel" destination="FEY-wx-yU1" id="llD-JN-LKy"/>
                         <outlet property="barHoursDescriptionLabel" destination="RM0-mO-oPJ" id="o41-w3-bTL"/>
                         <outlet property="barHoursLabel" destination="mwK-Cx-cGJ" id="Cbe-0z-JB8"/>
                         <outlet property="barImage" destination="EOX-nd-bm1" id="PxD-eo-fpi"/>
@@ -594,15 +596,20 @@
         <image name="beer-sample.jpg" width="320" height="160"/>
         <image name="beer.png" width="30" height="30"/>
         <image name="checkin-tab-selected.png" width="30" height="30"/>
+        <image name="checkin-tab-selected.png" width="30" height="30"/>
         <image name="checkin-tab.png" width="30" height="30"/>
         <image name="clock-red.png" width="60" height="60"/>
         <image name="drinks-tab-selected.png" width="30" height="30"/>
+        <image name="drinks-tab-selected.png" width="30" height="30"/>
+        <image name="drinks-tab.png" width="30" height="30"/>
+        <image name="drinks-tab.png" width="30" height="30"/>
         <image name="drinks-tab.png" width="30" height="30"/>
         <image name="happy-red.png" width="60" height="60"/>
         <image name="like.png" width="68" height="68"/>
         <image name="liquor.png" width="30" height="30"/>
         <image name="location.png" width="68" height="68"/>
         <image name="search.png" width="20" height="20"/>
+        <image name="wine.png" width="30" height="30"/>
         <image name="wine.png" width="30" height="30"/>
     </resources>
     <color key="tintColor" red="1" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
