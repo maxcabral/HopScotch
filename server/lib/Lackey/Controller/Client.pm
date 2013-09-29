@@ -294,7 +294,7 @@ sub process_entity {
   my ($self, $data) = @_;
   if (ref $data && UNIVERSAL::can($data,'isa')){
     if ($data->isa('DBIx::Class::Row')) {
-      $data = { count => 1, records => [$data->get_columns()] };
+      $data = { count => 1, records => [{$data->get_columns()}] };
     } elsif ($data->isa('DBIx::Class::ResultSet')){
       my @results = map { { $_->get_columns } } $data->all();
       $data = { count => scalar @results, records => \@results };
